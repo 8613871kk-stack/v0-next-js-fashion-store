@@ -14,11 +14,11 @@ export default function HomePage() {
               Nueva Coleccion 2026
             </span>
             <h1 className="font-serif text-4xl font-bold leading-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              <span className="text-balance">Estilo Accesible para Todos</span>
+              <span className="text-balance">Estilo para Todos</span>
             </h1>
             <p className="mt-4 text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
-              Descubre moda inspirada en las mejores marcas a precios
-              increibles. Envio gratis y pago contra reembolso.
+              Descubre las mejores marcas a precios increibles.
+              Envio gratis y pago contra reembolso en todos los pedidos.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
               <Button

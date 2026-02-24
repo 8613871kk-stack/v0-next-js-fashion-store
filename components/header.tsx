@@ -1,9 +1,10 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
-import { Menu, X, ShoppingBag } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
@@ -23,7 +24,14 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <ShoppingBag className="h-6 w-6 text-foreground" />
+          <Image
+            src="/images/logo.jpg"
+            alt="RopaModa logo"
+            width={40}
+            height={40}
+            className="rounded-md"
+            priority
+          />
           <span className="font-serif text-xl font-bold tracking-tight text-foreground">
             RopaModa
           </span>

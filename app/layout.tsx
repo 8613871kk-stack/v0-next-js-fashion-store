@@ -10,7 +10,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "RopaModa - Moda Accesible para Todos",
+  title: "RopaModa - Moda para Todos",
   description:
     "Tienda de moda online con zapatillas, ropa, accesorios, relojes y perfumes. Envio gratis en 2-3 dias. Pago contra reembolso.",
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "espana",
   ],
   openGraph: {
-    title: "RopaModa - Moda Accesible para Todos",
+    title: "RopaModa - Moda para Todos",
     description:
       "Tienda de moda online con envio gratis y pago contra reembolso.",
     type: "website",
