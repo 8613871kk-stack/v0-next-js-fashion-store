@@ -20,26 +20,17 @@ export function ProductCard({ product, onOrder }: ProductCardProps) {
   return (
     <div className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-shadow hover:shadow-lg">
       <div className="relative aspect-square overflow-hidden bg-secondary">
-        {detailHref ? (
-          <Link href={detailHref} className="relative block h-full w-full">
-            <Image
-              src={product.image}
-              alt={product.name}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            />
-          </Link>
-        ) : (
-          <Image
-            src={product.image}
-            alt={product.name}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
+        <Image
+          src={product.image}
+          alt={product.name}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+        {detailHref && (
+          <Link href={detailHref} className="absolute inset-0 z-10" aria-label={`Ver ${product.name}`} />
         )}
-        <Badge className="absolute left-3 top-3 bg-sale text-sale-foreground hover:bg-sale">
+        <Badge className="absolute left-3 top-3 z-20 bg-sale text-sale-foreground hover:bg-sale">
           {"AHORRA " + discount + "%"}
         </Badge>
       </div>
