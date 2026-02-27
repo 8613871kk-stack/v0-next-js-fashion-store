@@ -27,16 +27,10 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-const WHATSAPP_NUMBER = "34600000000"
+const WHATSAPP_NUMBER = "34662568296"
 
 const PLACEHOLDER_REVIEWS = [
-  {
-    id: 1,
-    name: "Carlos M.",
-    rating: 5,
-    comment: "Excelente calidad, llegaron en 2 días tal como prometido. Muy satisfecho con la compra.",
-    date: "15 Feb 2026",
-  },
+
   {
     id: 2,
     name: "Laura G.",
@@ -51,20 +45,7 @@ const PLACEHOLDER_REVIEWS = [
     comment: "Muy buena calidad por el precio. Envío rápido y embalaje perfecto. Repetiré sin duda.",
     date: "3 Feb 2026",
   },
-  {
-    id: 4,
-    name: "Ana P.",
-    rating: 5,
-    comment: "Calidad premium, incluye la caja original tal como describen. 100% recomendable.",
-    date: "28 Ene 2026",
-  },
-  {
-    id: 5,
-    name: "Miguel T.",
-    rating: 5,
-    comment: "Producto tal y como se describe. Llegó perfectamente embalado y muy rápido.",
-    date: "20 Ene 2026",
-  },
+
 ]
 
 function StarRating({ rating, max = 5 }: { rating: number; max?: number }) {
@@ -73,9 +54,8 @@ function StarRating({ rating, max = 5 }: { rating: number; max?: number }) {
       {Array.from({ length: max }).map((_, i) => (
         <Star
           key={i}
-          className={`h-4 w-4 ${
-            i < rating ? "fill-amber-400 text-amber-400" : "fill-muted text-muted"
-          }`}
+          className={`h-4 w-4 ${i < rating ? "fill-amber-400 text-amber-400" : "fill-muted text-muted"
+            }`}
         />
       ))}
     </div>
@@ -138,16 +118,16 @@ function OrderModal({ product, selectedSize, selectedColor, onClose }: OrderModa
 
     const msg = encodeURIComponent(
       `Hola, quiero hacer un pedido:\n\n` +
-        `*Producto:* ${product.name}\n` +
-        `*Color:* ${form.color}\n` +
-        `*Talla:* ${form.talla}\n` +
-        `*Cantidad:* ${form.cantidad}\n` +
-        `*Precio:* ${product.price}€\n\n` +
-        `*Nombre:* ${form.nombre} ${form.apellido}\n` +
-        `*Teléfono:* ${form.telefono}\n` +
-        `*Dirección:* ${form.direccion}\n` +
-        `*Ciudad:* ${form.ciudad}, ${form.provincia} ${form.codigoPostal}\n\n` +
-        `Pago contra reembolso. Gracias!`
+      `*Producto:* ${product.name}\n` +
+      `*Color:* ${form.color}\n` +
+      `*Talla:* ${form.talla}\n` +
+      `*Cantidad:* ${form.cantidad}\n` +
+      `*Precio:* ${product.price}€\n\n` +
+      `*Nombre:* ${form.nombre} ${form.apellido}\n` +
+      `*Teléfono:* ${form.telefono}\n` +
+      `*Dirección:* ${form.direccion}\n` +
+      `*Ciudad:* ${form.ciudad}, ${form.provincia} ${form.codigoPostal}\n\n` +
+      `Pago contra reembolso. Gracias!`
     )
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank")
   }
@@ -432,11 +412,10 @@ export function ProductDetailClient({ product }: { product: Product }) {
                     key={i}
                     onClick={() => setActiveImage(i)}
                     aria-label={`Ver imagen ${i + 1}`}
-                    className={`relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-colors ${
-                      i === activeImage
+                    className={`relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-colors ${i === activeImage
                         ? "border-primary"
                         : "border-border hover:border-primary/50"
-                    }`}
+                      }`}
                   >
                     <Image
                       src={img}
@@ -492,11 +471,10 @@ export function ProductDetailClient({ product }: { product: Product }) {
                     <button
                       key={color}
                       onClick={() => setSelectedColor(color)}
-                      className={`rounded-md border px-4 py-1.5 text-sm transition-colors ${
-                        selectedColor === color
+                      className={`rounded-md border px-4 py-1.5 text-sm transition-colors ${selectedColor === color
                           ? "border-primary bg-primary text-primary-foreground"
                           : "border-border bg-card text-foreground hover:border-primary"
-                      }`}
+                        }`}
                     >
                       {color}
                     </button>
@@ -516,11 +494,10 @@ export function ProductDetailClient({ product }: { product: Product }) {
                     <button
                       key={size}
                       onClick={() => setSelectedSize(size)}
-                      className={`h-10 w-12 rounded-md border text-sm font-medium transition-colors ${
-                        selectedSize === size
+                      className={`h-10 w-12 rounded-md border text-sm font-medium transition-colors ${selectedSize === size
                           ? "border-primary bg-primary text-primary-foreground"
                           : "border-border bg-card text-foreground hover:border-primary"
-                      }`}
+                        }`}
                     >
                       {size}
                     </button>
