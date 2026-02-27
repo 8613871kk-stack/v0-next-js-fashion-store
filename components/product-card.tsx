@@ -21,7 +21,7 @@ export function ProductCard({ product, onOrder }: ProductCardProps) {
     <div className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-shadow hover:shadow-lg">
       <div className="relative aspect-square overflow-hidden bg-secondary">
         {detailHref ? (
-          <Link href={detailHref} className="block h-full w-full">
+          <Link href={detailHref} className="relative block h-full w-full">
             <Image
               src={product.image}
               alt={product.name}
