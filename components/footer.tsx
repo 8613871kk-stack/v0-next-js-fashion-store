@@ -11,10 +11,10 @@ export function Footer() {
             </div>
             <div>
               <h4 className="text-sm font-semibold text-foreground">
-                Envio Gratis
+                Envio Rapido
               </h4>
               <p className="text-sm text-muted-foreground">
-                Entrega en 2-3 dias laborables
+                Entrega en 24-48 horas
               </p>
             </div>
           </div>

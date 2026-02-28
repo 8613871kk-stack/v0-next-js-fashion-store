@@ -12,6 +12,7 @@ import {
   RotateCcw,
   X,
   MessageCircle,
+  PlusCircle,
 } from "lucide-react"
 import { Product } from "@/lib/types"
 import { PROVINCIAS_ESPANA } from "@/lib/data"
@@ -19,6 +20,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
 import {
   Select,
   SelectContent,
@@ -29,37 +31,66 @@ import {
 
 const WHATSAPP_NUMBER = "34662568296"
 
-const PLACEHOLDER_REVIEWS = [
+interface Review {
+  id: number
+  name: string
+  rating: number
+  comment: string
+  date: string
+}
 
+const INITIAL_REVIEWS: Review[] = [
   {
-    id: 2,
+    id: 1,
     name: "Laura G.",
     rating: 5,
     comment: "Increíbles, parecen exactamente como en las fotos. El pago contra reembolso fue muy cómodo.",
     date: "10 Feb 2026",
   },
   {
-    id: 3,
+    id: 2,
     name: "Sergio R.",
     rating: 4,
     comment: "Muy buena calidad por el precio. Envío rápido y embalaje perfecto. Repetiré sin duda.",
     date: "3 Feb 2026",
   },
-
 ]
 
-function StarRating({ rating, max = 5 }: { rating: number; max?: number }) {
+function StarRating({
+  rating,
+  max = 5,
+  interactive = false,
+  onRate,
+}: {
+  rating: number
+  max?: number
+  interactive?: boolean
+  onRate?: (r: number) => void
+}) {
+  const [hovered, setHovered] = useState(0)
   return (
     <div className="flex items-center gap-0.5" aria-label={`${rating} de ${max} estrellas`}>
       {Array.from({ length: max }).map((_, i) => (
         <Star
           key={i}
-          className={`h-4 w-4 ${i < rating ? "fill-amber-400 text-amber-400" : "fill-muted text-muted"
-            }`}
+          onClick={() => interactive && onRate?.(i + 1)}
+          onMouseEnter={() => interactive && setHovered(i + 1)}
+          onMouseLeave={() => interactive && setHovered(0)}
+          className={`h-4 w-4 transition-colors ${
+            interactive ? "cursor-pointer" : ""
+          } ${
+            i < (interactive && hovered ? hovered : rating)
+              ? "fill-amber-400 text-amber-400"
+              : "fill-muted text-muted"
+          }`}
         />
       ))}
     </div>
   )
+}
+
+function isVideo(url: string) {
+  return url.endsWith(".mp4") || url.endsWith(".webm") || url.endsWith(".mov")
 }
 
 interface OrderModalProps {
@@ -90,15 +121,7 @@ function OrderModal({ product, selectedSize, selectedColor, onClose }: OrderModa
   }
 
   const validate = () => {
-    const required = [
-      "nombre",
-      "apellido",
-      "telefono",
-      "direccion",
-      "provincia",
-      "ciudad",
-      "codigoPostal",
-    ]
+    const required = ["nombre", "apellido", "telefono", "direccion", "provincia", "ciudad", "codigoPostal"]
     const newErrors: Record<string, string> = {}
     required.forEach((field) => {
       if (!form[field as keyof typeof form]?.trim()) {
@@ -115,7 +138,6 @@ function OrderModal({ product, selectedSize, selectedColor, onClose }: OrderModa
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!validate()) return
-
     const msg = encodeURIComponent(
       `Hola, quiero hacer un pedido:\n\n` +
       `*Producto:* ${product.name}\n` +
@@ -143,197 +165,170 @@ function OrderModal({ product, selectedSize, selectedColor, onClose }: OrderModa
               <span className="font-semibold text-foreground">{product.price}€</span>
             </p>
           </div>
-          <button
-            onClick={onClose}
-            className="rounded-md p-1 text-muted-foreground transition-colors hover:text-foreground"
-            aria-label="Cerrar"
-          >
+          <button onClick={onClose} className="rounded-md p-1 text-muted-foreground transition-colors hover:text-foreground" aria-label="Cerrar">
             <X className="h-5 w-5" />
           </button>
         </div>
-
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-6">
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="nombre">Nombre *</Label>
-              <Input
-                id="nombre"
-                placeholder="Tu nombre"
-                value={form.nombre}
-                onChange={(e) => handleChange("nombre", e.target.value)}
-                className={errors.nombre ? "border-destructive" : ""}
-              />
-              {errors.nombre && (
-                <p className="text-xs text-destructive">{errors.nombre}</p>
-              )}
+              <Input id="nombre" placeholder="Tu nombre" value={form.nombre} onChange={(e) => handleChange("nombre", e.target.value)} className={errors.nombre ? "border-destructive" : ""} />
+              {errors.nombre && <p className="text-xs text-destructive">{errors.nombre}</p>}
             </div>
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="apellido">Apellido *</Label>
-              <Input
-                id="apellido"
-                placeholder="Tu apellido"
-                value={form.apellido}
-                onChange={(e) => handleChange("apellido", e.target.value)}
-                className={errors.apellido ? "border-destructive" : ""}
-              />
-              {errors.apellido && (
-                <p className="text-xs text-destructive">{errors.apellido}</p>
-              )}
+              <Input id="apellido" placeholder="Tu apellido" value={form.apellido} onChange={(e) => handleChange("apellido", e.target.value)} className={errors.apellido ? "border-destructive" : ""} />
+              {errors.apellido && <p className="text-xs text-destructive">{errors.apellido}</p>}
             </div>
           </div>
-
           <div className="flex flex-col gap-1.5">
             <Label htmlFor="telefono">Teléfono *</Label>
-            <Input
-              id="telefono"
-              type="tel"
-              placeholder="+34 600 000 000"
-              value={form.telefono}
-              onChange={(e) => handleChange("telefono", e.target.value)}
-              className={errors.telefono ? "border-destructive" : ""}
-            />
-            {errors.telefono && (
-              <p className="text-xs text-destructive">{errors.telefono}</p>
-            )}
+            <Input id="telefono" type="tel" placeholder="+34 600 000 000" value={form.telefono} onChange={(e) => handleChange("telefono", e.target.value)} className={errors.telefono ? "border-destructive" : ""} />
+            {errors.telefono && <p className="text-xs text-destructive">{errors.telefono}</p>}
           </div>
-
           <div className="flex flex-col gap-1.5">
             <Label htmlFor="direccion">Dirección *</Label>
-            <Input
-              id="direccion"
-              placeholder="Calle, número, piso..."
-              value={form.direccion}
-              onChange={(e) => handleChange("direccion", e.target.value)}
-              className={errors.direccion ? "border-destructive" : ""}
-            />
-            {errors.direccion && (
-              <p className="text-xs text-destructive">{errors.direccion}</p>
-            )}
+            <Input id="direccion" placeholder="Calle, número, piso..." value={form.direccion} onChange={(e) => handleChange("direccion", e.target.value)} className={errors.direccion ? "border-destructive" : ""} />
+            {errors.direccion && <p className="text-xs text-destructive">{errors.direccion}</p>}
           </div>
-
           <div className="flex flex-col gap-1.5">
             <Label htmlFor="provincia">Provincia *</Label>
-            <Select
-              value={form.provincia}
-              onValueChange={(val) => handleChange("provincia", val)}
-            >
+            <Select value={form.provincia} onValueChange={(val) => handleChange("provincia", val)}>
               <SelectTrigger id="provincia" className={errors.provincia ? "border-destructive" : ""}>
                 <SelectValue placeholder="Selecciona provincia" />
               </SelectTrigger>
               <SelectContent>
                 {PROVINCIAS_ESPANA.map((prov) => (
-                  <SelectItem key={prov} value={prov}>
-                    {prov}
-                  </SelectItem>
+                  <SelectItem key={prov} value={prov}>{prov}</SelectItem>
                 ))}
               </SelectContent>
             </Select>
-            {errors.provincia && (
-              <p className="text-xs text-destructive">{errors.provincia}</p>
-            )}
+            {errors.provincia && <p className="text-xs text-destructive">{errors.provincia}</p>}
           </div>
-
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="ciudad">Ciudad *</Label>
-              <Input
-                id="ciudad"
-                placeholder="Tu ciudad"
-                value={form.ciudad}
-                onChange={(e) => handleChange("ciudad", e.target.value)}
-                className={errors.ciudad ? "border-destructive" : ""}
-              />
-              {errors.ciudad && (
-                <p className="text-xs text-destructive">{errors.ciudad}</p>
-              )}
+              <Input id="ciudad" placeholder="Tu ciudad" value={form.ciudad} onChange={(e) => handleChange("ciudad", e.target.value)} className={errors.ciudad ? "border-destructive" : ""} />
+              {errors.ciudad && <p className="text-xs text-destructive">{errors.ciudad}</p>}
             </div>
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="codigoPostal">Código Postal *</Label>
-              <Input
-                id="codigoPostal"
-                placeholder="28001"
-                value={form.codigoPostal}
-                onChange={(e) => handleChange("codigoPostal", e.target.value)}
-                className={errors.codigoPostal ? "border-destructive" : ""}
-              />
-              {errors.codigoPostal && (
-                <p className="text-xs text-destructive">{errors.codigoPostal}</p>
-              )}
+              <Input id="codigoPostal" placeholder="28001" value={form.codigoPostal} onChange={(e) => handleChange("codigoPostal", e.target.value)} className={errors.codigoPostal ? "border-destructive" : ""} />
+              {errors.codigoPostal && <p className="text-xs text-destructive">{errors.codigoPostal}</p>}
             </div>
           </div>
-
           {product.sizes && product.sizes.length > 0 && (
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="talla">Talla *</Label>
-              <Select
-                value={form.talla}
-                onValueChange={(val) => handleChange("talla", val)}
-              >
+              <Select value={form.talla} onValueChange={(val) => handleChange("talla", val)}>
                 <SelectTrigger id="talla" className={errors.talla ? "border-destructive" : ""}>
                   <SelectValue placeholder="Selecciona talla" />
                 </SelectTrigger>
                 <SelectContent>
                   {product.sizes.map((size) => (
-                    <SelectItem key={size} value={size}>
-                      {size}
-                    </SelectItem>
+                    <SelectItem key={size} value={size}>{size}</SelectItem>
                   ))}
                 </SelectContent>
               </Select>
-              {errors.talla && (
-                <p className="text-xs text-destructive">{errors.talla}</p>
-              )}
+              {errors.talla && <p className="text-xs text-destructive">{errors.talla}</p>}
             </div>
           )}
-
           {product.colors && product.colors.length > 0 && (
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="color">Color</Label>
-              <Select
-                value={form.color}
-                onValueChange={(val) => handleChange("color", val)}
-              >
+              <Select value={form.color} onValueChange={(val) => handleChange("color", val)}>
                 <SelectTrigger id="color">
                   <SelectValue placeholder="Selecciona color" />
                 </SelectTrigger>
                 <SelectContent>
                   {product.colors.map((color) => (
-                    <SelectItem key={color} value={color}>
-                      {color}
-                    </SelectItem>
+                    <SelectItem key={color} value={color}>{color}</SelectItem>
                   ))}
                 </SelectContent>
               </Select>
             </div>
           )}
-
           <div className="flex flex-col gap-1.5">
             <Label htmlFor="cantidad">Cantidad</Label>
-            <Select
-              value={form.cantidad}
-              onValueChange={(val) => handleChange("cantidad", val)}
-            >
-              <SelectTrigger id="cantidad">
-                <SelectValue />
-              </SelectTrigger>
+            <Select value={form.cantidad} onValueChange={(val) => handleChange("cantidad", val)}>
+              <SelectTrigger id="cantidad"><SelectValue /></SelectTrigger>
               <SelectContent>
                 {["1", "2", "3", "4", "5"].map((n) => (
-                  <SelectItem key={n} value={n}>
-                    {n}
-                  </SelectItem>
+                  <SelectItem key={n} value={n}>{n}</SelectItem>
                 ))}
               </SelectContent>
             </Select>
           </div>
-
           <div className="rounded-md bg-secondary p-3 text-center text-sm text-secondary-foreground">
             Pagas al recibir en casa — sin riesgo
           </div>
-
           <Button type="submit" className="w-full gap-2 py-6 text-base">
             <MessageCircle className="h-5 w-5" />
             Confirmar por WhatsApp
           </Button>
+        </form>
+      </div>
+    </div>
+  )
+}
+
+interface ReviewFormProps {
+  productName: string
+  onClose: () => void
+  onSubmit: (review: Omit<Review, "id">) => void
+}
+
+function ReviewForm({ productName, onClose, onSubmit }: ReviewFormProps) {
+  const [name, setName] = useState("")
+  const [rating, setRating] = useState(5)
+  const [comment, setComment] = useState("")
+  const [errors, setErrors] = useState<Record<string, string>>({})
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const newErrors: Record<string, string> = {}
+    if (!name.trim()) newErrors.name = "Campo requerido"
+    if (!comment.trim()) newErrors.comment = "Campo requerido"
+    if (Object.keys(newErrors).length > 0) { setErrors(newErrors); return }
+    const today = new Date()
+    const dateStr = today.toLocaleDateString("es-ES", { day: "numeric", month: "short", year: "numeric" })
+    onSubmit({ name, rating, comment, date: dateStr })
+    onClose()
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/60 p-4 backdrop-blur-sm">
+      <div className="relative w-full max-w-md rounded-lg bg-card shadow-xl">
+        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-card px-6 py-4">
+          <h3 className="text-lg font-bold text-foreground">Añadir Opinión</h3>
+          <button onClick={onClose} className="rounded-md p-1 text-muted-foreground transition-colors hover:text-foreground" aria-label="Cerrar">
+            <X className="h-5 w-5" />
+          </button>
+        </div>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-6">
+          <p className="text-sm text-muted-foreground">Tu opinión sobre: <span className="font-medium text-foreground">{productName}</span></p>
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor="review-name">Tu nombre *</Label>
+            <Input id="review-name" placeholder="Nombre o alias" value={name} onChange={(e) => setName(e.target.value)} className={errors.name ? "border-destructive" : ""} />
+            {errors.name && <p className="text-xs text-destructive">{errors.name}</p>}
+          </div>
+          <div className="flex flex-col gap-1.5">
+            <Label>Valoración *</Label>
+            <StarRating rating={rating} interactive onRate={setRating} />
+          </div>
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor="review-comment">Comentario *</Label>
+            <Textarea
+              id="review-comment"
+              placeholder="Escribe tu experiencia..."
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
+              className={`min-h-24 resize-none ${errors.comment ? "border-destructive" : ""}`}
+            />
+            {errors.comment && <p className="text-xs text-destructive">{errors.comment}</p>}
+          </div>
+          <Button type="submit" className="w-full">Publicar Opinión</Button>
         </form>
       </div>
     </div>
@@ -346,6 +341,8 @@ export function ProductDetailClient({ product }: { product: Product }) {
   const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] ?? "")
   const [selectedColor, setSelectedColor] = useState(product.colors?.[0] ?? "")
   const [showOrder, setShowOrder] = useState(false)
+  const [reviews, setReviews] = useState<Review[]>(INITIAL_REVIEWS)
+  const [showReviewForm, setShowReviewForm] = useState(false)
 
   const discount = Math.round(
     ((product.originalPrice - product.price) / product.originalPrice) * 100
@@ -354,9 +351,14 @@ export function ProductDetailClient({ product }: { product: Product }) {
   const prevImage = () => setActiveImage((i) => (i - 1 + images.length) % images.length)
   const nextImage = () => setActiveImage((i) => (i + 1) % images.length)
 
-  const avgRating = Math.round(
-    PLACEHOLDER_REVIEWS.reduce((sum, r) => sum + r.rating, 0) / PLACEHOLDER_REVIEWS.length
-  )
+  const avgRating = Math.round(reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length)
+
+  const handleAddReview = (review: Omit<Review, "id">) => {
+    setReviews((prev) => [...prev, { ...review, id: Date.now() }])
+  }
+
+  const currentMedia = images[activeImage]
+  const currentIsVideo = isVideo(currentMedia)
 
   return (
     <>
@@ -374,14 +376,25 @@ export function ProductDetailClient({ product }: { product: Product }) {
           {/* Gallery */}
           <div className="flex flex-col gap-4">
             <div className="relative aspect-square overflow-hidden rounded-xl bg-secondary">
-              <Image
-                src={images[activeImage]}
-                alt={`${product.name} - imagen ${activeImage + 1}`}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
-              />
+              {currentIsVideo ? (
+                <video
+                  src={currentMedia}
+                  className="h-full w-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              ) : (
+                <Image
+                  src={currentMedia}
+                  alt={`${product.name} - imagen ${activeImage + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
+              )}
               <Badge className="absolute left-3 top-3 bg-sale text-sale-foreground text-sm">
                 SAVE {discount}%
               </Badge>
@@ -411,19 +424,18 @@ export function ProductDetailClient({ product }: { product: Product }) {
                   <button
                     key={i}
                     onClick={() => setActiveImage(i)}
-                    aria-label={`Ver imagen ${i + 1}`}
-                    className={`relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-colors ${i === activeImage
-                        ? "border-primary"
-                        : "border-border hover:border-primary/50"
-                      }`}
+                    aria-label={`Ver ${isVideo(img) ? "video" : "imagen"} ${i + 1}`}
+                    className={`relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-colors ${
+                      i === activeImage ? "border-primary" : "border-border hover:border-primary/50"
+                    }`}
                   >
-                    <Image
-                      src={img}
-                      alt={`Miniatura ${i + 1}`}
-                      fill
-                      className="object-cover"
-                      sizes="80px"
-                    />
+                    {isVideo(img) ? (
+                      <div className="flex h-full w-full items-center justify-center bg-secondary text-muted-foreground text-xs font-medium">
+                        Video
+                      </div>
+                    ) : (
+                      <Image src={img} alt={`Miniatura ${i + 1}`} fill className="object-cover" sizes="80px" />
+                    )}
                   </button>
                 ))}
               </div>
@@ -443,9 +455,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
               </h1>
               <div className="mt-2 flex items-center gap-3">
                 <StarRating rating={avgRating} />
-                <span className="text-sm text-muted-foreground">
-                  ({PLACEHOLDER_REVIEWS.length} opiniones)
-                </span>
+                <span className="text-sm text-muted-foreground">({reviews.length} opiniones)</span>
               </div>
             </div>
 
@@ -453,9 +463,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
             <div className="flex items-end gap-3">
               <span className="text-4xl font-bold text-foreground">{product.price}€</span>
               <div className="flex flex-col items-start">
-                <span className="text-base text-muted-foreground line-through">
-                  {product.originalPrice}€
-                </span>
+                <span className="text-base text-muted-foreground line-through">{product.originalPrice}€</span>
                 <Badge className="bg-sale text-sale-foreground">SAVE {discount}%</Badge>
               </div>
             </div>
@@ -471,10 +479,11 @@ export function ProductDetailClient({ product }: { product: Product }) {
                     <button
                       key={color}
                       onClick={() => setSelectedColor(color)}
-                      className={`rounded-md border px-4 py-1.5 text-sm transition-colors ${selectedColor === color
+                      className={`rounded-md border px-4 py-1.5 text-sm transition-colors ${
+                        selectedColor === color
                           ? "border-primary bg-primary text-primary-foreground"
                           : "border-border bg-card text-foreground hover:border-primary"
-                        }`}
+                      }`}
                     >
                       {color}
                     </button>
@@ -494,10 +503,11 @@ export function ProductDetailClient({ product }: { product: Product }) {
                     <button
                       key={size}
                       onClick={() => setSelectedSize(size)}
-                      className={`h-10 w-12 rounded-md border text-sm font-medium transition-colors ${selectedSize === size
+                      className={`h-10 w-12 rounded-md border text-sm font-medium transition-colors ${
+                        selectedSize === size
                           ? "border-primary bg-primary text-primary-foreground"
                           : "border-border bg-card text-foreground hover:border-primary"
-                        }`}
+                      }`}
                     >
                       {size}
                     </button>
@@ -507,11 +517,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
             )}
 
             {/* CTA */}
-            <Button
-              size="lg"
-              className="gap-2 py-7 text-base"
-              onClick={() => setShowOrder(true)}
-            >
+            <Button size="lg" className="gap-2 py-7 text-base" onClick={() => setShowOrder(true)}>
               <MessageCircle className="h-5 w-5" />
               Pagar Contra Reembolso
             </Button>
@@ -520,7 +526,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
             <div className="grid grid-cols-3 gap-3 rounded-xl border border-border bg-card p-4">
               <div className="flex flex-col items-center gap-1.5 text-center">
                 <Truck className="h-5 w-5 text-primary" />
-                <span className="text-xs text-muted-foreground">Envío gratis 2-3 días</span>
+                <span className="text-xs text-muted-foreground">Envío en 24-48 horas</span>
               </div>
               <div className="flex flex-col items-center gap-1.5 text-center">
                 <ShieldCheck className="h-5 w-5 text-primary" />
@@ -549,22 +555,23 @@ export function ProductDetailClient({ product }: { product: Product }) {
 
         {/* Reviews */}
         <div className="mt-14">
-          <div className="flex items-center justify-between">
-            <h2 className="font-serif text-2xl font-bold text-foreground">
-              Opiniones de clientes
-            </h2>
-            <div className="flex items-center gap-2">
-              <StarRating rating={avgRating} />
-              <span className="text-sm font-medium text-foreground">{avgRating}.0 / 5</span>
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <h2 className="font-serif text-2xl font-bold text-foreground">Opiniones de clientes</h2>
+              <div className="flex items-center gap-2">
+                <StarRating rating={avgRating} />
+                <span className="text-sm font-medium text-foreground">{avgRating}.0 / 5</span>
+              </div>
             </div>
+            <Button variant="outline" size="sm" className="gap-2" onClick={() => setShowReviewForm(true)}>
+              <PlusCircle className="h-4 w-4" />
+              Añadir Opinión
+            </Button>
           </div>
 
           <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {PLACEHOLDER_REVIEWS.map((review) => (
-              <div
-                key={review.id}
-                className="flex flex-col gap-2 rounded-xl border border-border bg-card p-5"
-              >
+            {reviews.map((review) => (
+              <div key={review.id} className="flex flex-col gap-2 rounded-xl border border-border bg-card p-5">
                 <div className="flex items-center justify-between">
                   <span className="font-medium text-foreground">{review.name}</span>
                   <span className="text-xs text-muted-foreground">{review.date}</span>
@@ -583,6 +590,14 @@ export function ProductDetailClient({ product }: { product: Product }) {
           selectedSize={selectedSize}
           selectedColor={selectedColor}
           onClose={() => setShowOrder(false)}
+        />
+      )}
+
+      {showReviewForm && (
+        <ReviewForm
+          productName={product.name}
+          onClose={() => setShowReviewForm(false)}
+          onSubmit={handleAddReview}
         />
       )}
     </>

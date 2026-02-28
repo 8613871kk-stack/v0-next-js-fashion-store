@@ -1,11 +1,15 @@
 import { notFound } from "next/navigation"
-import { zapatillasData } from "@/lib/data"
+import { zapatillasData, ropaData } from "@/lib/data"
 import { Product } from "@/lib/types"
 import { ProductDetailClient } from "./product-detail-client"
 import type { Metadata } from "next"
 
 function getAllProducts(): Product[] {
-  return Object.values(zapatillasData).flat()
+  const zapatillas = Object.values(zapatillasData).flat()
+  const ropa = Object.values(ropaData).flatMap((marcas) =>
+    Object.values(marcas).flat()
+  )
+  return [...zapatillas, ...ropa]
 }
 
 function getProductBySlug(slug: string): Product | undefined {
