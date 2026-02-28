@@ -12,7 +12,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "RopaModa - Moda para Todos",
   description:
-    "Tienda de moda online con zapatillas, ropa, accesorios, relojes y perfumes. Envio gratis en 2-3 dias. Pago contra reembolso.",
+    "Tienda de moda online con zapatillas, ropa, accesorios, relojes y perfumes. Envio en 24-48 horas. Pago contra reembolso.",
   keywords: [
     "moda",
     "zapatillas",

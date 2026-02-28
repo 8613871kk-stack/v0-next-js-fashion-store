@@ -64,7 +64,7 @@ export default function HomePage() {
                 Envio Gratis
               </p>
               <p className="text-xs text-muted-foreground">
-                2-3 dias laborables
+                24-48 horas
               </p>
             </div>
           </div>
