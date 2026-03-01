@@ -55,9 +55,14 @@ export function Footer() {
               <h4 className="text-sm font-semibold text-foreground">
                 Atencion al Cliente
               </h4>
-              <p className="text-sm text-muted-foreground">
+              <a
+                href="https://wa.me/34662568296?text=Hola%2C%20necesito%20ayuda%20con%20mi%20pedido%20en%20RopaModa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Disponible por WhatsApp 24/7
-              </p>
+              </a>
             </div>
           </div>
         </div>
