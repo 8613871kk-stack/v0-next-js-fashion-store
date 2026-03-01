@@ -43,8 +43,8 @@ export default function HomePage() {
           </div>
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-lg lg:max-w-none">
             <Image
-              src="/images/hero-fashion.jpg"
-              alt="Modelo con ropa de moda"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/new%20balance%209060%20color%20rosa-wfkGfBWuoYmEhHmdpJ2s25xz8c38Jq.jpeg"
+              alt="New Balance 9060 Rosa"
               fill
               className="object-cover"
               priority

@@ -357,7 +357,17 @@ export function ProductDetailClient({
   const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] ?? "")
   const [selectedColor, setSelectedColor] = useState(product.colors?.[0] ?? "")
   const [showOrder, setShowOrder] = useState(false)
-  const [reviews, setReviews] = useState<Review[]>(INITIAL_REVIEWS)
+  const [reviews, setReviews] = useState<Review[]>(() => {
+    if (typeof window === "undefined") return INITIAL_REVIEWS
+    try {
+      const stored = localStorage.getItem(`reviews-${product.id}`)
+      if (stored) {
+        const parsed = JSON.parse(stored) as Review[]
+        if (parsed.length > 0) return parsed
+      }
+    } catch {}
+    return INITIAL_REVIEWS
+  })
   const [showReviewForm, setShowReviewForm] = useState(false)
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -383,7 +393,14 @@ export function ProductDetailClient({
   const avgRating = Math.round(reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length)
 
   const handleAddReview = (review: Omit<Review, "id">) => {
-    setReviews((prev) => [...prev, { ...review, id: Date.now() }])
+    const newReview = { ...review, id: Date.now() }
+    setReviews((prev) => {
+      const updated = [...prev, newReview]
+      try {
+        localStorage.setItem(`reviews-${product.id}`, JSON.stringify(updated))
+      } catch {}
+      return updated
+    })
   }
 
   const currentMedia = images[activeImage]
