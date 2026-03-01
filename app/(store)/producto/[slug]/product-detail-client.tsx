@@ -337,7 +337,21 @@ function ReviewForm({ productName, onClose, onSubmit }: ReviewFormProps) {
   )
 }
 
-export function ProductDetailClient({ product }: { product: Product }) {
+const CATEGORY_LABELS: Record<string, { label: string; href: string }> = {
+  zapatillas: { label: "Zapatillas", href: "/zapatillas" },
+  ropa: { label: "Ropa", href: "/ropa" },
+  accesorios: { label: "Accesorios", href: "/accesorios" },
+  relojes: { label: "Relojes", href: "/relojes" },
+  perfumes: { label: "Perfumes", href: "/perfumes" },
+}
+
+export function ProductDetailClient({
+  product,
+  category = "zapatillas",
+}: {
+  product: Product
+  category?: string
+}) {
   const images = product.images && product.images.length > 0 ? product.images : [product.image]
   const [activeImage, setActiveImage] = useState(0)
   const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] ?? "")
@@ -382,8 +396,14 @@ export function ProductDetailClient({ product }: { product: Product }) {
         <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-sm text-muted-foreground">
           <Link href="/" className="hover:text-foreground">Inicio</Link>
           <span>/</span>
-          <Link href="/zapatillas" className="hover:text-foreground">Zapatillas</Link>
-          <span>/</span>
+          {CATEGORY_LABELS[category] && (
+            <>
+              <Link href={CATEGORY_LABELS[category].href} className="hover:text-foreground">
+                {CATEGORY_LABELS[category].label}
+              </Link>
+              <span>/</span>
+            </>
+          )}
           <span className="text-foreground">{product.name}</span>
         </nav>
 
@@ -399,12 +419,17 @@ export function ProductDetailClient({ product }: { product: Product }) {
                     className="h-full w-full object-cover"
                     muted
                     playsInline
+                    preload="metadata"
                     onPlay={() => setIsVideoPlaying(true)}
                     onPause={() => setIsVideoPlaying(false)}
                   />
                   <button
                     onClick={toggleVideoPlayPause}
-                    className="absolute inset-0 flex items-center justify-center rounded-xl bg-black/20 opacity-0 transition-opacity duration-200 hover:opacity-100"
+                    className={`absolute inset-0 flex items-center justify-center rounded-xl transition-all duration-200 ${
+                      isVideoPlaying
+                        ? "bg-black/0 opacity-0 hover:bg-black/20 hover:opacity-100"
+                        : "bg-black/25 opacity-100"
+                    }`}
                     aria-label={isVideoPlaying ? "Pausar video" : "Reproducir video"}
                   >
                     <div className="rounded-full bg-white/90 p-4 transition-transform hover:scale-110">
