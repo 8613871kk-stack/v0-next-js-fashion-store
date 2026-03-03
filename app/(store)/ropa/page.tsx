@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ropaData } from "@/lib/data"
+import { slugify } from "@/lib/utils"
 import { Product } from "@/lib/types"
 import { ProductCard } from "@/components/product-card"
 import { CheckoutForm } from "@/components/checkout-form"
@@ -34,49 +35,58 @@ export default function RopaPage() {
             (sum, m) => sum + ropaData[tipo][m].length,
             0
           )
+          const tipoSlug = slugify(tipo)
 
           return (
-            <AccordionItem
-              key={tipo}
-              value={tipo}
-              className="overflow-hidden rounded-lg border border-border bg-card"
-            >
-              <AccordionTrigger className="px-6 py-4 text-lg font-semibold text-foreground hover:no-underline">
-                {tipo}
-                <span className="ml-2 text-sm font-normal text-muted-foreground">
-                  ({totalProducts} productos)
-                </span>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-6">
-                <Accordion type="multiple" defaultValue={marcas} className="flex flex-col gap-3">
-                  {marcas.map((marca) => (
-                    <AccordionItem
-                      key={marca}
-                      value={marca}
-                      className="overflow-hidden rounded-md border border-border bg-secondary/50"
-                    >
-                      <AccordionTrigger className="px-4 py-3 text-base font-medium text-foreground hover:no-underline">
-                        {marca}
-                        <span className="ml-2 text-sm font-normal text-muted-foreground">
-                          ({ropaData[tipo][marca].length})
-                        </span>
-                      </AccordionTrigger>
-                      <AccordionContent className="px-4 pb-4">
-                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                          {ropaData[tipo][marca].map((product) => (
-                            <ProductCard
-                              key={product.id}
-                              product={product}
-                              onOrder={setSelectedProduct}
-                            />
-                          ))}
+            // id on outer div so the tipo-level anchor resolves (e.g. #chandal)
+            <div key={tipo} id={tipoSlug}>
+              <AccordionItem
+                value={tipo}
+                className="overflow-hidden rounded-lg border border-border bg-card"
+              >
+                <AccordionTrigger className="px-6 py-4 text-lg font-semibold text-foreground hover:no-underline">
+                  {tipo}
+                  <span className="ml-2 text-sm font-normal text-muted-foreground">
+                    ({totalProducts} productos)
+                  </span>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <Accordion type="multiple" defaultValue={marcas} className="flex flex-col gap-3">
+                    {marcas.map((marca) => {
+                      // composite id: chandal-nike, chandal-lacoste, etc.
+                      const marcaSlug = `${tipoSlug}-${slugify(marca)}`
+
+                      return (
+                        <div key={marca} id={marcaSlug}>
+                          <AccordionItem
+                            value={marca}
+                            className="overflow-hidden rounded-md border border-border bg-secondary/50"
+                          >
+                            <AccordionTrigger className="px-4 py-3 text-base font-medium text-foreground hover:no-underline">
+                              {marca}
+                              <span className="ml-2 text-sm font-normal text-muted-foreground">
+                                ({ropaData[tipo][marca].length})
+                              </span>
+                            </AccordionTrigger>
+                            <AccordionContent className="px-4 pb-4">
+                              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                                {ropaData[tipo][marca].map((product) => (
+                                  <ProductCard
+                                    key={product.id}
+                                    product={product}
+                                    onOrder={setSelectedProduct}
+                                  />
+                                ))}
+                              </div>
+                            </AccordionContent>
+                          </AccordionItem>
                         </div>
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              </AccordionContent>
-            </AccordionItem>
+                      )
+                    })}
+                  </Accordion>
+                </AccordionContent>
+              </AccordionItem>
+            </div>
           )
         })}
       </Accordion>

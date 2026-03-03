@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Product } from "@/lib/types"
+import { slugify } from "@/lib/utils"
 import { ProductCard } from "@/components/product-card"
 import { CheckoutForm } from "@/components/checkout-form"
 
@@ -29,11 +30,13 @@ export function SimpleProductPage({
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            onOrder={setSelectedProduct}
-          />
+          // id derived from the product name so anchor links resolve
+          <div key={product.id} id={slugify(product.name)}>
+            <ProductCard
+              product={product}
+              onOrder={setSelectedProduct}
+            />
+          </div>
         ))}
       </div>
 
