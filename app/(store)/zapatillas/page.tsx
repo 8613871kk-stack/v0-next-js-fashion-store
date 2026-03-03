@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { zapatillasData } from "@/lib/data"
+import { slugify } from "@/lib/utils"
 import { Product } from "@/lib/types"
 import { ProductCard } from "@/components/product-card"
 import { CheckoutForm } from "@/components/checkout-form"
@@ -29,29 +30,31 @@ export default function ZapatillasPage() {
 
       <Accordion type="multiple" defaultValue={brands} className="flex flex-col gap-4">
         {brands.map((brand) => (
-          <AccordionItem
-            key={brand}
-            value={brand}
-            className="overflow-hidden rounded-lg border border-border bg-card"
-          >
-            <AccordionTrigger className="px-6 py-4 text-lg font-semibold text-foreground hover:no-underline">
-              {brand}
-              <span className="ml-2 text-sm font-normal text-muted-foreground">
-                ({zapatillasData[brand].length} productos)
-              </span>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 pb-6">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {zapatillasData[brand].map((product) => (
-                  <ProductCard
-                    key={product.id}
-                    product={product}
-                    onOrder={setSelectedProduct}
-                  />
-                ))}
-              </div>
-            </AccordionContent>
-          </AccordionItem>
+          // id on the wrapping div so smooth scroll lands on the section header
+          <div key={brand} id={slugify(brand)}>
+            <AccordionItem
+              value={brand}
+              className="overflow-hidden rounded-lg border border-border bg-card"
+            >
+              <AccordionTrigger className="px-6 py-4 text-lg font-semibold text-foreground hover:no-underline">
+                {brand}
+                <span className="ml-2 text-sm font-normal text-muted-foreground">
+                  ({zapatillasData[brand].length} productos)
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-6">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {zapatillasData[brand].map((product) => (
+                    <ProductCard
+                      key={product.id}
+                      product={product}
+                      onOrder={setSelectedProduct}
+                    />
+                  ))}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </div>
         ))}
       </Accordion>
 
