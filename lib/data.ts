@@ -246,6 +246,38 @@ export const zapatillasData: Record<string, Product[]> = {
       sizes: ["40", "41", "42", "43", "44", "45"],
       colors: ["Blanco"],
     },
+    {
+      id: "nike-af1-blanco",
+      slug: "nike-af1-blanco",
+      name: "Air Force 1 Blanco",
+      brand: "Nike",
+      description:
+        "Zapatillas Air Force en blanco: diseño clásico con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja original. Tallas: 40, 41, 42, 43, 44, 45. Precio: 40€ (¡Oferta económica - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo icónico accesible!",
+      price: 40,
+      originalPrice: 60,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20air%20force%201%20color%20blanco-T0vNBRyp0bcaUXrZ5DGQ0xyjNA6D7t.jpeg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20air%20force%201%20color%20blanco-T0vNBRyp0bcaUXrZ5DGQ0xyjNA6D7t.jpeg",
+      ],
+      sizes: ["40", "41", "42", "43", "44", "45"],
+      colors: ["Blanco"],
+    },
+    {
+      id: "nike-af1-negro",
+      slug: "nike-af1-negro",
+      name: "Air Force 1 Negro",
+      brand: "Nike",
+      description:
+        "Zapatillas Air Force en negro: diseño clásico con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja original. Tallas: 40, 41, 42, 43, 44, 45. Precio: 40€ (¡Clásico - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo icónico accesible!",
+      price: 40,
+      originalPrice: 60,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20air%20force%201%20color%20negro-nMc5aPClmy3VQiuMmT5taXdQ2RTrvo.jpeg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20air%20force%201%20color%20negro-nMc5aPClmy3VQiuMmT5taXdQ2RTrvo.jpeg",
+      ],
+      sizes: ["40", "41", "42", "43", "44", "45"],
+      colors: ["Negro"],
+    },
   ],
   Asics: [
     {
