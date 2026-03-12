@@ -41,6 +41,9 @@ const navItems: NavItem[] = [
       { label: "Nike", href: "/ropa#chandal-nike" },
       { label: "Lacoste", href: "/ropa#chandal-lacoste" },
       { label: "Armani", href: "/ropa#chandal-armani" },
+      { label: "Conjunto Verano", href: "/ropa#conjunto-verano" },
+      { label: "Lacoste Verano", href: "/ropa#conjunto-verano-lacoste" },
+      { label: "Burberry Verano", href: "/ropa#conjunto-verano-burberry" },
     ],
   },
   {

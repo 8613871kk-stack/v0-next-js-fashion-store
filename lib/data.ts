@@ -907,6 +907,92 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
       },
     ],
   },
+  "Conjunto Verano": {
+    Lacoste: [
+      {
+        id: "conjunto-verano-lacoste-rosa",
+        slug: "conjunto-verano-lacoste-rosa",
+        name: "Conjunto Verano Lacoste Rosa",
+        brand: "Lacoste",
+        description:
+          "Conjunto verano Lacoste en rosa: conjunto ligero y fresco perfecto para verano con tela premium y logo discreto. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 50€ (¡Oferta verano - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo fresco y elegante!",
+        price: 50,
+        originalPrice: 75,
+        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20lacoste%20rosa-WFqoPjPkOQTiDqOng04ehtOnHPLVZX.jpeg",
+        images: [
+          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20lacoste%20rosa-WFqoPjPkOQTiDqOng04ehtOnHPLVZX.jpeg",
+        ],
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Rosa"],
+      },
+      {
+        id: "conjunto-verano-lacoste-verde",
+        slug: "conjunto-verano-lacoste-verde",
+        name: "Conjunto Verano Lacoste Verde",
+        brand: "Lacoste",
+        description:
+          "Conjunto verano Lacoste en verde: conjunto ligero y fresco perfecto para verano con tela premium y logo discreto. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 50€ (¡Oferta verano - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo fresco y elegante!",
+        price: 50,
+        originalPrice: 75,
+        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20lacoste%20verde-TuyhuftJI293jBUTlD9k4J3PJuRjCq.jpeg",
+        images: [
+          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20lacoste%20verde-TuyhuftJI293jBUTlD9k4J3PJuRjCq.jpeg",
+        ],
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["Verde"],
+      },
+    ],
+    Burberry: [
+      {
+        id: "conjunto-verano-burberry-crema",
+        slug: "conjunto-verano-burberry-crema",
+        name: "Conjunto Verano Burberry Crema",
+        brand: "Burberry",
+        description:
+          "Conjunto Burberry en crema: conjunto elegante y cómodo con tela premium. Recomiendo una talla más. Alta calidad garantizada. Tallas: M, L, XL, XXL. Precio: 50€ (¡Oferta premium - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo de lujo accesible!",
+        price: 50,
+        originalPrice: 75,
+        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20burberry%20crema-zS3Rtwlzhqi9mOqbaxt2YDXXpsyGZH.jpeg",
+        images: [
+          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20burberry%20crema-zS3Rtwlzhqi9mOqbaxt2YDXXpsyGZH.jpeg",
+        ],
+        sizes: ["M", "L", "XL", "XXL"],
+        colors: ["Crema"],
+      },
+      {
+        id: "conjunto-verano-burberry-blanco",
+        slug: "conjunto-verano-burberry-blanco",
+        name: "Conjunto Verano Burberry Blanco",
+        brand: "Burberry",
+        description:
+          "Conjunto Burberry en blanco: conjunto elegante y cómodo con tela premium. Recomiendo una talla más. Alta calidad garantizada. Tallas: M, L, XL, XXL. Precio: 50€ (¡Oferta premium - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo de lujo accesible!",
+        price: 50,
+        originalPrice: 75,
+        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20burberry%20blanco-Er469vrhrooUy3uM7ICQBqtQTxLG0T.jpeg",
+        images: [
+          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20burberry%20blanco-Er469vrhrooUy3uM7ICQBqtQTxLG0T.jpeg",
+        ],
+        sizes: ["M", "L", "XL", "XXL"],
+        colors: ["Blanco"],
+      },
+      {
+        id: "conjunto-verano-burberry-negro",
+        slug: "conjunto-verano-burberry-negro",
+        name: "Conjunto Verano Burberry Negro",
+        brand: "Burberry",
+        description:
+          "Conjunto Burberry en negro: conjunto elegante y cómodo con tela premium. Recomiendo una talla más. Alta calidad garantizada. Tallas: M, L, XL, XXL. Precio: 50€ (¡Oferta premium - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo de lujo accesible!",
+        price: 50,
+        originalPrice: 75,
+        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20burberry%20negro-ot7IyFJK92rCBqlcW6v5z7HWZM4Z3c.jpeg",
+        images: [
+          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20burberry%20negro-ot7IyFJK92rCBqlcW6v5z7HWZM4Z3c.jpeg",
+        ],
+        sizes: ["M", "L", "XL", "XXL"],
+        colors: ["Negro"],
+      },
+    ],
+  },
 }
 
 export const relojesData: Product[] = [
