@@ -29,6 +29,7 @@ const navItems: NavItem[] = [
       { label: "Nike", href: "/zapatillas#nike" },
       { label: "Asics", href: "/zapatillas#asics" },
       { label: "Amiri", href: "/zapatillas#amiri" },
+      { label: "Nocta", href: "/zapatillas#nocta" },
       { label: "Louis Vuitton", href: "/zapatillas#louis-vuitton" },
     ],
   },
