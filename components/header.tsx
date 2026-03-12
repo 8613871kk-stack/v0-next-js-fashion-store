@@ -244,7 +244,8 @@ export function Header() {
             alt="VANTTI"
             width={48}
             height={48}
-            className="h-9 w-auto md:h-12"
+            className="h-9 md:h-12"
+            style={{ width: "auto", height: "auto" }}
             priority
           />
           <span className="hidden font-serif text-2xl font-bold tracking-widest text-foreground md:inline">
