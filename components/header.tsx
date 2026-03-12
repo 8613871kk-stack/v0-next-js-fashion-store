@@ -41,8 +41,6 @@ const navItems: NavItem[] = [
       { label: "Nike", href: "/ropa#chandal-nike" },
       { label: "Lacoste", href: "/ropa#chandal-lacoste" },
       { label: "Armani", href: "/ropa#chandal-armani" },
-      { label: "Conjunto Verano", href: "/ropa#conjunto-verano" },
-      { label: "Lacoste Verano", href: "/ropa#conjunto-verano-lacoste" },
       { label: "Burberry Verano", href: "/ropa#conjunto-verano-burberry" },
     ],
   },
@@ -56,64 +54,18 @@ const navItems: NavItem[] = [
       { label: "Lacoste", href: "/accesorios#lacoste" },
     ],
   },
-  {
-    label: "Perfumes",
-    href: "/perfumes",
-    submenu: [
-      { label: "Blue Intense", href: "/perfumes#blue-intense" },
-      { label: "Sauvage Style", href: "/perfumes#sauvage-style" },
-      { label: "Good Girl", href: "/perfumes#good-girl" },
-      { label: "One Million", href: "/perfumes#one-million" },
-      { label: "Coco Mademoiselle", href: "/perfumes#coco-mademoiselle" },
-      { label: "Acqua Di Gio", href: "/perfumes#acqua-di-gio" },
-    ],
-  },
-  {
-    label: "Relojes",
-    href: "/relojes",
-    submenu: [
-      { label: "Submariner", href: "/relojes#submariner-style" },
-      { label: "Daytona", href: "/relojes#daytona-style" },
-      { label: "DateJust", href: "/relojes#datejust-style" },
-      { label: "Royal Oak", href: "/relojes#royal-oak-style" },
-      { label: "Nautilus", href: "/relojes#nautilus-style" },
-      { label: "Santos", href: "/relojes#santos-style" },
-    ],
-  },
 ]
 
-// ---- Desktop dropdown ----
-function DesktopDropdown({
-  item,
-  isOpen,
-  onOpen,
-  onClose,
-}: {
-  item: NavItem
-  isOpen: boolean
-  onOpen: () => void
-  onClose: () => void
-}) {
+// ---- Desktop nav link with dropdown ----
+function DesktopNavLink({ item }: { item: NavItem }) {
   const pathname = usePathname()
-  const router = useRouter()
+  const [isOpen, setIsOpen] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  // Close on Escape
-  const handleKeyDown = useCallback(
-    (e: React.KeyboardEvent) => {
-      if (e.key === "Escape") {
-        onClose()
-        containerRef.current?.querySelector("button")?.focus()
-      }
-    },
-    [onClose]
-  )
-
-  // Navigate to section, handling same-page smooth scroll
   const handleSubClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
       const [pagePath, anchor] = href.split("#")
-      const isSamePage = pathname === pagePath
+      const isSamePage = pathname === pagePath || (pagePath === "" && pathname === "/")
 
       if (isSamePage && anchor) {
         e.preventDefault()
@@ -122,58 +74,62 @@ function DesktopDropdown({
           el.scrollIntoView({ behavior: "smooth" })
         }
       }
-      onClose()
+      setIsOpen(false)
     },
-    [pathname, onClose]
+    [pathname]
   )
 
   return (
     <div
       ref={containerRef}
       className="relative"
-      onMouseEnter={onOpen}
-      onMouseLeave={onClose}
-      onKeyDown={handleKeyDown}
+      onMouseEnter={() => item.submenu && setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
     >
       <Link
         href={item.href}
-        aria-haspopup="true"
-        aria-expanded={isOpen}
         className={cn(
-          "rounded-md px-3 py-2 text-sm font-medium transition-colors inline-flex items-center gap-1",
+          "inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors",
           pathname === item.href || pathname.startsWith(item.href + "/")
             ? "bg-primary text-primary-foreground"
-            : "text-foreground/70 hover:bg-secondary hover:text-foreground"
+            : "text-foreground hover:bg-secondary hover:text-foreground"
         )}
       >
         {item.label}
         {item.submenu && (
           <ChevronDown
-            className={cn("h-3.5 w-3.5 transition-transform duration-200", isOpen && "rotate-180")}
+            className={cn(
+              "h-3.5 w-3.5 transition-transform duration-200",
+              isOpen && "rotate-180"
+            )}
             aria-hidden="true"
           />
         )}
       </Link>
 
+      {/* Desktop Dropdown */}
       {item.submenu && (
         <div
-          role="menu"
-          aria-label={`Submenu de ${item.label}`}
           className={cn(
-            "absolute left-0 top-full z-50 mt-1 min-w-[180px] rounded-lg border border-border bg-card shadow-md transition-all duration-150 origin-top",
+            "absolute left-0 top-full z-50 mt-1 min-w-[200px] origin-top rounded-lg border border-border bg-white shadow-lg transition-all duration-250 ease-out",
             isOpen
               ? "opacity-100 scale-y-100 pointer-events-auto"
               : "opacity-0 scale-y-95 pointer-events-none"
           )}
+          style={{
+            transform: isOpen
+              ? "translateY(0) scaleY(1)"
+              : "translateY(-8px) scaleY(0.95)",
+            opacity: isOpen ? 1 : 0,
+          }}
         >
           <ul className="py-1">
             {item.submenu.map((sub) => (
-              <li key={sub.href} role="none">
+              <li key={sub.href}>
                 <a
                   href={sub.href}
-                  role="menuitem"
                   onClick={(e) => handleSubClick(e, sub.href)}
-                  className="block px-4 py-2 text-sm text-foreground/70 hover:bg-secondary hover:text-foreground transition-colors first:rounded-t-lg last:rounded-b-lg focus:bg-secondary focus:text-foreground focus:outline-none"
+                  className="block px-4 py-2 text-xs font-medium uppercase tracking-wider text-gray-800 transition-colors hover:bg-gray-100 first:rounded-t-lg last:rounded-b-lg"
                 >
                   {sub.label}
                 </a>
@@ -186,24 +142,21 @@ function DesktopDropdown({
   )
 }
 
-// ---- Mobile accordion item ----
+// ---- Mobile nav item with dropdown ----
 function MobileNavItem({
   item,
-  isExpanded,
-  onToggle,
   onClose,
 }: {
   item: NavItem
-  isExpanded: boolean
-  onToggle: () => void
   onClose: () => void
 }) {
   const pathname = usePathname()
+  const [isExpanded, setIsExpanded] = useState(false)
 
   const handleSubClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
       const [pagePath, anchor] = href.split("#")
-      const isSamePage = pathname === pagePath
+      const isSamePage = pathname === pagePath || (pagePath === "" && pathname === "/")
 
       if (isSamePage && anchor) {
         e.preventDefault()
@@ -226,7 +179,7 @@ function MobileNavItem({
           "block rounded-md px-3 py-2.5 text-sm font-medium transition-colors",
           pathname === item.href
             ? "bg-primary text-primary-foreground"
-            : "text-foreground/70 hover:bg-secondary hover:text-foreground"
+            : "text-foreground hover:bg-secondary hover:text-foreground"
         )}
       >
         {item.label}
@@ -237,38 +190,46 @@ function MobileNavItem({
   return (
     <div>
       <button
-        onClick={onToggle}
+        onClick={() => setIsExpanded(!isExpanded)}
         aria-expanded={isExpanded}
-        aria-controls={`mobile-sub-${item.label}`}
         className={cn(
-          "w-full text-left flex items-center justify-between rounded-md px-3 py-2.5 text-sm font-medium transition-colors",
+          "w-full flex items-center justify-between rounded-md px-3 py-3 text-sm font-semibold tracking-wide transition-colors",
           isExpanded
             ? "bg-secondary text-foreground"
-            : "text-foreground/70 hover:bg-secondary hover:text-foreground"
+            : "text-foreground hover:bg-secondary hover:text-foreground"
         )}
       >
         {item.label}
         <ChevronDown
-          className={cn("h-4 w-4 transition-transform duration-200", isExpanded && "rotate-180")}
+          className={cn(
+            "h-4 w-4 shrink-0 transition-transform duration-300",
+            isExpanded && "rotate-180"
+          )}
           aria-hidden="true"
         />
       </button>
 
-      {isExpanded && (
-        <ul id={`mobile-sub-${item.label}`} className="ml-3 mt-1 space-y-0.5 border-l border-border pl-3">
+      <div
+        className={cn(
+          "overflow-hidden transition-all duration-300 ease-in-out",
+          isExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        )}
+      >
+        <ul className="ml-4 mt-1 mb-1 space-y-0.5 border-l-2 border-border pl-3">
           {item.submenu.map((sub) => (
             <li key={sub.href}>
               <a
                 href={sub.href}
                 onClick={(e) => handleSubClick(e, sub.href)}
-                className="block rounded-md px-3 py-2 text-sm text-foreground/70 hover:bg-secondary hover:text-foreground transition-colors"
+                className="flex items-center gap-2 rounded-md px-3 py-2.5 text-sm text-foreground/70 transition-colors hover:bg-secondary hover:text-foreground active:bg-secondary"
               >
+                <span className="h-1 w-1 rounded-full bg-foreground/30 shrink-0" />
                 {sub.label}
               </a>
             </li>
           ))}
         </ul>
-      )}
+      </div>
     </div>
   )
 }
@@ -276,69 +237,33 @@ function MobileNavItem({
 // ---- Main header ----
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null)
-  const [expandedMobile, setExpandedMobile] = useState<Set<string>>(new Set())
 
   const closeMobile = useCallback(() => {
     setMobileOpen(false)
-    setExpandedMobile(new Set())
-  }, [])
-
-  const toggleMobileItem = useCallback((label: string) => {
-    setExpandedMobile((prev) => {
-      const next = new Set(prev)
-      if (next.has(label)) {
-        next.delete(label)
-      } else {
-        next.add(label)
-      }
-      return next
-    })
-  }, [])
-
-  // Close desktop dropdown on route change
-  useEffect(() => {
-    setOpenDropdown(null)
   }, [])
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border bg-background">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
-        <Link href="/" className="flex items-center gap-2" aria-label="RopaModa - Inicio">
+        <Link href="/" className="flex items-center gap-2" aria-label="VANTTI - Inicio">
           <Image
-            src="/images/logo.jpg"
-            alt="RopaModa logo"
-            width={40}
-            height={40}
-            className="rounded-md"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vantti%20logo-XSxbuVEpqqETiV2jtNWtcgsMJwGtIg.png"
+            alt="VANTTI"
+            width={48}
+            height={48}
+            className="h-9 w-auto md:h-12"
             priority
           />
-          <span className="font-serif text-xl font-bold tracking-tight text-foreground">
-            RopaModa
+          <span className="hidden font-serif text-2xl font-bold tracking-widest text-foreground md:inline">
+            VANTTI
           </span>
         </Link>
 
         {/* Desktop nav */}
         <nav aria-label="Navegacion principal" className="hidden items-center gap-1 md:flex">
-          {navItems.map((item) =>
-            item.submenu ? (
-              <DesktopDropdown
-                key={item.label}
-                item={item}
-                isOpen={openDropdown === item.label}
-                onOpen={() => setOpenDropdown(item.label)}
-                onClose={() => setOpenDropdown(null)}
-              />
-            ) : (
-              <DesktopDropdown
-                key={item.label}
-                item={item}
-                isOpen={false}
-                onOpen={() => {}}
-                onClose={() => {}}
-              />
-            )
-          )}
+          {navItems.map((item) => (
+            <DesktopNavLink key={item.label} item={item} />
+          ))}
         </nav>
 
         {/* Mobile toggle */}
@@ -358,17 +283,17 @@ export function Header() {
         <nav
           id="mobile-nav"
           aria-label="Navegacion movil"
-          className="border-t border-border bg-card px-4 pb-4 pt-2 md:hidden space-y-1"
+          className="border-t border-border bg-background px-4 pb-4 pt-2 md:hidden"
         >
-          {navItems.map((item) => (
-            <MobileNavItem
-              key={item.label}
-              item={item}
-              isExpanded={expandedMobile.has(item.label)}
-              onToggle={() => toggleMobileItem(item.label)}
-              onClose={closeMobile}
-            />
-          ))}
+          <div className="space-y-1">
+            {navItems.map((item) => (
+              <MobileNavItem
+                key={item.label}
+                item={item}
+                onClose={closeMobile}
+              />
+            ))}
+          </div>
         </nav>
       )}
     </header>

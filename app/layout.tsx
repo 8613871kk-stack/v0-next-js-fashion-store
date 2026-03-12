@@ -10,29 +10,30 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "RopaModa - Moda para Todos",
+  title: "VANTTI - Zapatillas de Diseño y Lujo Premium",
   description:
-    "Tienda de moda online con zapatillas, ropa, accesorios, relojes y perfumes. Envio en 24-48 horas. Pago contra reembolso.",
+    "VANTTI: El nuevo estándar del lujo en zapatillas de diseño premium. Envío 24-72 horas. Pago contra reembolso. Compra directa desde España.",
   keywords: [
-    "moda",
     "zapatillas",
+    "zapatillas premium",
+    "lujo",
+    "moda",
     "ropa",
     "accesorios",
-    "relojes",
-    "perfumes",
     "tienda online",
-    "espana",
+    "españa",
+    "envío rápido",
   ],
   openGraph: {
-    title: "RopaModa - Moda para Todos",
+    title: "VANTTI - Zapatillas de Diseño y Lujo Premium",
     description:
-      "Tienda de moda online con envio gratis y pago contra reembolso.",
+      "Zapatillas de diseño premium. Envío 24-72 horas. Pago contra reembolso.",
     type: "website",
   },
 }
 
 export const viewport: Viewport = {
-  themeColor: "#1a1a1a",
+  themeColor: "#000000",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,

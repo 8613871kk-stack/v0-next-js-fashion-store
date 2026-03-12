@@ -63,8 +63,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Dior B22",
       brand: "Dior",
       description:
-        "Zapatillas B22: diseño chunky y elegante con materiales premium transpirables para máxima comodidad diaria. Disponibles en negro y gris o blanco. Alta calidad garantizada, incluye caja original Dior. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Disponible de nuevo - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo de lujo al alcance!",
-      price: 70,
+        "Zapatillas B22: diseño chunky y elegante con materiales premium transpirables para máxima comodidad diaria. Disponibles en negro y gris o blanco. Alta calidad garantizada, incluye caja original Dior. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Disponible de nuevo - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo de lujo al alcance!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dior%20b22%20color%20negro-J4F5HyKAYxIgYOW7LEXhL0GfoDKgA8.jpg",
       images: [
@@ -81,8 +81,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Dior B30",
       brand: "Dior",
       description:
-        "Zapatillas Dior B30: silueta moderna y versátil, perfectas para looks urbanos con malla resistente y suela acolchada. Nuevo color negro y blanco disponible. Alta calidad garantizada, incluye caja original Dior como en la foto. Tallas: 40, 41, 42, 43, 44, 45. Precio: 65€ (¡Color top ventas - Oferta SAVE 35% de 100€!). Envío en 24-48 horas, pago seguro en casa.",
-      price: 65,
+        "Zapatillas Dior B30: silueta moderna y versátil, perfectas para looks urbanos con malla resistente y suela acolchada. Nuevo color negro y blanco disponible. Alta calidad garantizada, incluye caja original Dior como en la foto. Tallas: 40, 41, 42, 43, 44, 45. Precio: 65€ (¡Color top ventas - Oferta SAVE 35% de 100€!). Envío en 24-72 horas, pago seguro en casa.",
+      price: 77,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dior%20b30%20color%20blanco-SEFPcA2TFFrMTN4mfhRkpHWYHWmBzC.jpeg",
       images: [
@@ -100,8 +100,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "New Balance 9060 Negro",
       brand: "New Balance",
       description:
-        "New Balance 9060 en negro: equilibrio perfecto entre retro y moderno, con amortiguación superior para todo el día. Alta calidad garantizada, incluye caja original New Balance y accesorios. Tallas disponibles: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Bestseller - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡No te quedes sin ellas!",
-      price: 70,
+        "New Balance 9060 en negro: equilibrio perfecto entre retro y moderno, con amortiguación superior para todo el día. Alta calidad garantizada, incluye caja original New Balance y accesorios. Tallas disponibles: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Bestseller - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡No te quedes sin ellas!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/new%20balance%209060%20color%20negro-zCPARnnaRzXtQaHoDQJxEewHmbOSWQ.png",
       images: [
@@ -117,8 +117,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "New Balance 9060 Blanco",
       brand: "New Balance",
       description:
-        "New Balance 9060 en blanco: diseño fresco y versátil con amortiguación avanzada para confort todo el día. Alta calidad garantizada, incluye caja original New Balance y accesorios. Tallas disponibles: 36, 37, 38, 39, 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Novedad - SAVE 30% de 100€!). Envío en 24-48 horas, pago en casa. ¡Estilo impecable!",
-      price: 70,
+        "New Balance 9060 en blanco: diseño fresco y versátil con amortiguación avanzada para confort todo el día. Alta calidad garantizada, incluye caja original New Balance y accesorios. Tallas disponibles: 36, 37, 38, 39, 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Novedad - SAVE 30% de 100€!). Envío en 24-72 horas, pago en casa. ¡Estilo impecable!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/new%20balance%209060%20blancas-Bh8Dgr1fVr7MSmhaw8Z4L4fqrHI6rB.jpeg",
       images: [
@@ -134,8 +134,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "New Balance 9060 Rosa",
       brand: "New Balance",
       description:
-        "New Balance 9060: equilibrio perfecto entre retro y moderno, con amortiguación superior para todo el día. Nuevo color rosa disponible. Alta calidad garantizada, incluye caja original New Balance y accesorios. Tallas: 36, 37, 38, 39, 40. Precio: 70€ (¡Novedad femenina - SAVE 30% de 100€!). Envío en 24-48 horas, pago en casa. ¡Estilo vibrante!",
-      price: 70,
+        "New Balance 9060: equilibrio perfecto entre retro y moderno, con amortiguación superior para todo el día. Nuevo color rosa disponible. Alta calidad garantizada, incluye caja original New Balance y accesorios. Tallas: 36, 37, 38, 39, 40. Precio: 70€ (¡Novedad femenina - SAVE 30% de 100€!). Envío en 24-72 horas, pago en casa. ¡Estilo vibrante!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/new%20balance%209060%20color%20rosa-wfkGfBWuoYmEhHmdpJ2s25xz8c38Jq.jpeg",
       images: [
@@ -150,8 +150,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "New Balance 2000 Rosa",
       brand: "New Balance",
       description:
-        "New Balance 2000: diseño clásico con amortiguación superior para rendimiento diario. Alta calidad garantizada. Tallas: 36, 37, 38, 39, 40. Precio: 40€ (¡Oferta económica - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Calidad accesible!",
-      price: 40,
+        "New Balance 2000: diseño clásico con amortiguación superior para rendimiento diario. Alta calidad garantizada. Tallas: 36, 37, 38, 39, 40. Precio: 40€ (¡Oferta económica - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Calidad accesible!",
+      price: 52,
       originalPrice: 60,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20balance%202000-VfJnkbdEVwZobnaebVE8erYOFRU6yf.jpeg",
       images: [
@@ -168,8 +168,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike React",
       brand: "Nike",
       description:
-        "Nike React: tecnología de espuma reactiva para rebote y comodidad extrema en cada paso. Disponibles en 4 colores vibrantes: gris puro, negro elegante, gris-marrón urbano y gris-negro mix. Alta calidad garantizada, incluye caja original Nike. Tallas: 40, 41, 42, 43, 44, 45. Precio: 65€ (¡Oferta flash - SAVE 35% de 100€!). Envío en 24-48 horas, pago en casa sin riesgos.",
-      price: 65,
+        "Nike React: tecnología de espuma reactiva para rebote y comodidad extrema en cada paso. Disponibles en 4 colores vibrantes: gris puro, negro elegante, gris-marrón urbano y gris-negro mix. Alta calidad garantizada, incluye caja original Nike. Tallas: 40, 41, 42, 43, 44, 45. Precio: 65€ (¡Oferta flash - SAVE 35% de 100€!). Envío en 24-72 horas, pago en casa sin riesgos.",
+      price: 77,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20react%20gris-SnGGN2vWSRCqzcpf2QoRVTugl7dOuj.jpeg",
       images: [
@@ -187,8 +187,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Shox Negro",
       brand: "Nike",
       description:
-        "Nike Shox en negro: sistema de amortiguación Shox para energía explosiva y comodidad innovadora. Perfectas para atletas o looks diarios. Alta calidad garantizada, incluye caja original Nike. Tallas: 36, 37, 38, 39, 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Oferta limitada - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso.",
-      price: 70,
+        "Nike Shox en negro: sistema de amortiguación Shox para energía explosiva y comodidad innovadora. Perfectas para atletas o looks diarios. Alta calidad garantizada, incluye caja original Nike. Tallas: 36, 37, 38, 39, 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Oferta limitada - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso.",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20shox%20negra-yfcWSuuHSmzOSWKjfUJuhnuopQ2ZbD.jpeg",
       images: [
@@ -203,8 +203,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Air Max 95 x Cortez Negro",
       brand: "Nike",
       description:
-        "Zapatillas Air Max 95 x Cortez en negro: fusión icónica con amortiguación Air y detalles amarillos para comodidad diaria. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Colaboración exclusiva - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Eleva tu paso!",
-      price: 70,
+        "Zapatillas Air Max 95 x Cortez en negro: fusión icónica con amortiguación Air y detalles amarillos para comodidad diaria. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Colaboración exclusiva - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Eleva tu paso!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Air%20max%2095%20x%20cortez%20color%20negro%202-upKF6t1BhqZMiIeHK8zKU0981xXxVE.jpeg",
       images: [
@@ -220,8 +220,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Shox Camaleón",
       brand: "Nike",
       description:
-        "Shox Camaleón: sistema de amortiguación Shox para energía explosiva y comodidad innovadora. Disponibles en 3 colores: azul, rojo y verde. Alta calidad garantizada, incluye caja original y todo. Precio: 70€ (¡Oferta versátil - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Elige tu color!",
-      price: 70,
+        "Shox Camaleón: sistema de amortiguación Shox para energía explosiva y comodidad innovadora. Disponibles en 3 colores: azul, rojo y verde. Alta calidad garantizada, incluye caja original y todo. Precio: 70€ (¡Oferta versátil - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Elige tu color!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20shox%20camaleon-yt0aBPlRiEplt3E02lCtXMVsgu7MNF.jpeg",
       images: [
@@ -236,8 +236,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Air Force 1 x Nocta Blanco",
       brand: "Nike",
       description:
-        "Air Force 1 x Nocta: fusión clásica con detalles premium, doble cordones y suela resistente. Alta calidad garantizada, increíble acabado. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Colaboración exclusiva - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Eleva tu estilo!",
-      price: 70,
+        "Air Force 1 x Nocta: fusión clásica con detalles premium, doble cordones y suela resistente. Alta calidad garantizada, increíble acabado. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Colaboración exclusiva - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Eleva tu estilo!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/air%20force%20x%20nocta%20color%20blanco-zdMc0rQRb7SF6Vj4qsKpRBUjkCe6eP.jpeg",
       images: [
@@ -252,8 +252,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Air Force 1 Blanco",
       brand: "Nike",
       description:
-        "Zapatillas Air Force en blanco: diseño clásico con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja original. Tallas: 40, 41, 42, 43, 44, 45. Precio: 40€ (¡Oferta económica - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo icónico accesible!",
-      price: 40,
+        "Zapatillas Air Force en blanco: diseño clásico con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja original. Tallas: 40, 41, 42, 43, 44, 45. Precio: 40€ (¡Oferta económica - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo icónico accesible!",
+      price: 52,
       originalPrice: 60,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20air%20force%201%20color%20blanco-T0vNBRyp0bcaUXrZ5DGQ0xyjNA6D7t.jpeg",
       images: [
@@ -268,8 +268,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Air Force 1 Negro",
       brand: "Nike",
       description:
-        "Zapatillas Air Force en negro: diseño clásico con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja original. Tallas: 40, 41, 42, 43, 44, 45. Precio: 40€ (¡Clásico - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo icónico accesible!",
-      price: 40,
+        "Zapatillas Air Force en negro: diseño clásico con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja original. Tallas: 40, 41, 42, 43, 44, 45. Precio: 40€ (¡Clásico - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo icónico accesible!",
+      price: 52,
       originalPrice: 60,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20air%20force%201%20color%20negro-nMc5aPClmy3VQiuMmT5taXdQ2RTrvo.jpeg",
       images: [
@@ -286,8 +286,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Asics Gel Negro",
       brand: "Asics",
       description:
-        "Asics Gel en negro: amortiguación Gel icónica para absorción de impactos y rendimiento superior. Diseño sleek para running o casual. Alta calidad garantizada, incluye caja original Asics. Tallas: 40, 41, 42, 43, 44, 45. Precio: 65€ (¡Últimas unidades - SAVE 35% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Calidad que dura!",
-      price: 65,
+        "Asics Gel en negro: amortiguación Gel icónica para absorción de impactos y rendimiento superior. Diseño sleek para running o casual. Alta calidad garantizada, incluye caja original Asics. Tallas: 40, 41, 42, 43, 44, 45. Precio: 65€ (¡Últimas unidades - SAVE 35% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Calidad que dura!",
+      price: 77,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/asic%20gel%20negro-SqV5WVNGiZfS1OpzhsGrlPOqA1HqFE.jpeg",
       images: [
@@ -304,8 +304,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Zapatillas Amiri",
       brand: "Amiri",
       description:
-        "Zapatillas Amiri: estilo streetwear de lujo con detalles premium y suela resistente. Alta calidad garantizada, incluye caja original Amiri. Tallas disponibles: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Exclusivo - SAVE 30% de 100€!). Envío en 24-48 horas, pago seguro en casa. ¡Eleva tu outfit!",
-      price: 70,
+        "Zapatillas Amiri: estilo streetwear de lujo con detalles premium y suela resistente. Alta calidad garantizada, incluye caja original Amiri. Tallas disponibles: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Exclusivo - SAVE 30% de 100€!). Envío en 24-72 horas, pago seguro en casa. ¡Eleva tu outfit!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amiri-KkZLd5lJWqZ8u3mEmrebMeGeKhZupu.jpeg",
       images: [
@@ -325,8 +325,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Negro",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en negra: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Clásico - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo innovador!",
-      price: 70,
+        "Nike Nocta Glide en negra: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Clásico - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nike%20nocta%20glide%20color%20negro-MpyO38ZV8Q2ZIuuOVo7nadLa8z1waG.jpeg",
       images: [
@@ -341,8 +341,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Negro y Rojo",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en negro y rojo: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Versátil - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo innovador!",
-      price: 70,
+        "Nike Nocta Glide en negro y rojo: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Versátil - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nike%20nocta%20glide%20color%20negro%20y%20rojo-ZCg4SUNq1eG1MSF4TtFvRmcMiSJUp6.jpeg",
       images: [
@@ -357,8 +357,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Blanca",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en blanca: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Fresco - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo innovador!",
-      price: 70,
+        "Nike Nocta Glide en blanca: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Fresco - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20blanco-u42TsleumFjwRsnTLO8jAmYGeR1HGV.jpeg",
       images: [
@@ -373,8 +373,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Negro y Blanco",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en negro y blanco: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Contraste - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo innovador!",
-      price: 70,
+        "Nike Nocta Glide en negro y blanco: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Contraste - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20negro%20y%20blanco-Ae7SqDHxe567NruJt6SKBZsPHFEZGe.jpeg",
       images: [
@@ -389,8 +389,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Negro y Dorado",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en negro y dorado: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Lujoso - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo innovador!",
-      price: 70,
+        "Nike Nocta Glide en negro y dorado: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Lujoso - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20negro%20y%20dorado-0T5iN9x9t4nKKy3eGiQRupv6PyIlnh.jpeg",
       images: [
@@ -405,8 +405,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Roja",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en roja: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Vibrante - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo innovador!",
-      price: 70,
+        "Nike Nocta Glide en roja: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Vibrante - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20rojo-UlF6UiZLIKphMWveGVHfgtiT8OCdh5.jpeg",
       images: [
@@ -421,8 +421,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Blanco y Negro",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en blanco y negro: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Dual - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo innovador!",
-      price: 70,
+        "Nike Nocta Glide en blanco y negro: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Dual - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20blanco%20y%20negro-Cm1ZmeR4PPlo7w5u4o0fmSzunqIdjb.jpeg",
       images: [
@@ -437,8 +437,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Negro 2",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en negro variante 2: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Clásico alternativo - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo innovador!",
-      price: 70,
+        "Nike Nocta Glide en negro variante 2: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Clásico alternativo - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20negro%202-LUwTy0ESEVJZwLVIBYJKDtBZCnsrFe.jpeg",
       images: [
@@ -453,8 +453,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Naranja",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en naranja: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Energético - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo innovador!",
-      price: 70,
+        "Nike Nocta Glide en naranja: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Energético - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20naranja-8qsuB2DlCpZH9PiAQ7NLWe9rQJfn2g.jpeg",
       images: [
@@ -471,8 +471,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "LV Trainer",
       brand: "Louis Vuitton",
       description:
-        "Zapatillas LV Trainer: diseño icónico con detalles premium y suela cómoda para uso versátil. Disponibles en blanco-azul fresco o blanco-negro elegante. Alta calidad garantizada, incluye caja original LV. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Oferta limitada - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo premium accesible!",
-      price: 70,
+        "Zapatillas LV Trainer: diseño icónico con detalles premium y suela cómoda para uso versátil. Disponibles en blanco-azul fresco o blanco-negro elegante. Alta calidad garantizada, incluye caja original LV. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Oferta limitada - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo premium accesible!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lv%20trainer%20color%20blanco%20y%20negro-Myw9S4x6Hpc0OtwLVLiqpFIhnE6oyH.jpeg",
       images: [
@@ -488,8 +488,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "LV Trainer Negro",
       brand: "Louis Vuitton",
       description:
-        "Zapatillas LV Trainer en negro: diseño icónico con detalles premium y suela cómoda para uso versátil. Alta calidad garantizada, incluye caja original LV. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Novedad - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo premium accesible!",
-      price: 70,
+        "Zapatillas LV Trainer en negro: diseño icónico con detalles premium y suela cómoda para uso versátil. Alta calidad garantizada, incluye caja original LV. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Novedad - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo premium accesible!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lv%20trainer%20color%20negro%20nuevas-fEvToBcN8JLKvyHtZ2SHYCmflvI6Ej.jpeg",
       images: [
@@ -504,8 +504,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "LV Skate Piedras Brillantes",
       brand: "Louis Vuitton",
       description:
-        "Zapatillas LV Skate nuevas con piedras brillantes: estilo lujoso y llamativo con detalles cristalinos y suela premium. Nuevos colores negro y negro-gris disponibles. Alta calidad garantizada, incluye caja original LV naranja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Edición limitada - SAVE 30% de 100€!). Envío en 24-48 horas, pago seguro en casa. ¡Brilla con estilo!",
-      price: 70,
+        "Zapatillas LV Skate nuevas con piedras brillantes: estilo lujoso y llamativo con detalles cristalinos y suela premium. Nuevos colores negro y negro-gris disponibles. Alta calidad garantizada, incluye caja original LV naranja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Edición limitada - SAVE 30% de 100€!). Envío en 24-72 horas, pago seguro en casa. ¡Brilla con estilo!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lv%20skate%20nuevas%20de%20piedras%20brillantes%20color%20crema-jzAcUE58h2dRQ5PlEtrucTVztLvuGs.jpeg",
       images: [
@@ -524,8 +524,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "LV Skate Blanco",
       brand: "Louis Vuitton",
       description:
-        "Zapatillas LV Skate en blanco: estilo lujoso con suela premium para comodidad diaria. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Novedad - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Brilla con estilo!",
-      price: 70,
+        "Zapatillas LV Skate en blanco: estilo lujoso con suela premium para comodidad diaria. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Novedad - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Brilla con estilo!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lv%20skate%20gris-JU6BjQ9K8DFfgwSnoil1uMv3MYhoZZ.jpeg",
       images: [
@@ -540,8 +540,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "LV Skate Gris",
       brand: "Louis Vuitton",
       description:
-        "Zapatillas LV Skate en gris: diseño versátil con detalles premium. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 55€ (¡Oferta especial - SAVE 31% de 80€!). Envío en 24-48 horas, pago contra reembolso. ¡Elegancia sutil!",
-      price: 55,
+        "Zapatillas LV Skate en gris: diseño versátil con detalles premium. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 55€ (¡Oferta especial - SAVE 31% de 80€!). Envío en 24-72 horas, pago contra reembolso. ¡Elegancia sutil!",
+      price: 67,
       originalPrice: 80,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lv%20skate%20blanco-LFoaJ7eJCk1cP2dEfCUmICpHZbkL7Y.jpeg",
       images: [
@@ -556,8 +556,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "LV Skate Negro",
       brand: "Louis Vuitton",
       description:
-        "Zapatillas LV Skate en negro: estilo lujoso con suela premium para uso diario. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Clásico - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Potencia tu look!",
-      price: 70,
+        "Zapatillas LV Skate en negro: estilo lujoso con suela premium para uso diario. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Clásico - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Potencia tu look!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lv%20skate%20negro-Y5KT3w8zuVFgTjMwOceXFVhlSI3wpQ.jpeg",
       images: [
@@ -572,8 +572,8 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "LV Skate Blanco y Negro",
       brand: "Louis Vuitton",
       description:
-        "Zapatillas LV Skate en blanco y negro: contraste elegante con detalles premium. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Versátil - SAVE 30% de 100€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo dual!",
-      price: 70,
+        "Zapatillas LV Skate en blanco y negro: contraste elegante con detalles premium. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Versátil - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo dual!",
+      price: 82,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lv%20vuitton%20skate%20blanco%20y%20negro-anOIWhhL9ZxRlZI9tufE7AUWXKKKB4.jpeg",
       images: [
@@ -592,7 +592,7 @@ export const accesoriosData: Product[] = [
     name: "Bolso Louis Vuitton",
     brand: "Louis Vuitton",
     description:
-      "Bolso de mano con cintura Louis Vuitton: diseño elegante y funcional con materiales premium para uso diario. Alta calidad garantizada. Precio: 40€ (¡Oferta accesorio - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo práctico de lujo!",
+      "Bolso de mano con cintura Louis Vuitton: diseño elegante y funcional con materiales premium para uso diario. Alta calidad garantizada. Precio: 40€ (¡Oferta accesorio - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo práctico de lujo!",
     price: 40,
     originalPrice: 60,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bolso%20luis%20vuitton-VlehMyFDKDtpM8dlKeIdFNOneQXHVB.jpeg",
@@ -606,7 +606,7 @@ export const accesoriosData: Product[] = [
     name: "Bolso Louis Vuitton Paris",
     brand: "Louis Vuitton",
     description:
-      "Bolso de mano con cintura Louis Vuitton Paris: edición especial con toque parisino y materiales premium. Alta calidad garantizada. Precio: 40€ (¡Limitado - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo francés accesible!",
+      "Bolso de mano con cintura Louis Vuitton Paris: edición especial con toque parisino y materiales premium. Alta calidad garantizada. Precio: 40€ (¡Limitado - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo francés accesible!",
     price: 40,
     originalPrice: 60,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bolso%20luis%20vuitton%20paris-ocFDsUFcvRSmQzzuIKeNgJjGmS5cgM.jpeg",
@@ -620,7 +620,7 @@ export const accesoriosData: Product[] = [
     name: "Bolso Gucci",
     brand: "Gucci",
     description:
-      "Bolso de mano con cintura Gucci: diseño icónico y versátil con detalles premium. Alta calidad garantizada. Precio: 40€ (¡Oferta exclusiva - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso. ¡Accesorio premium!",
+      "Bolso de mano con cintura Gucci: diseño icónico y versátil con detalles premium. Alta calidad garantizada. Precio: 40€ (¡Oferta exclusiva - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso. ¡Accesorio premium!",
     price: 40,
     originalPrice: 60,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bolso%20gucci-a4Xnj9Ly5kDzUbUNVoI9Yc1x3q0XF5.jpeg",
@@ -634,7 +634,7 @@ export const accesoriosData: Product[] = [
     name: "Bolso Prada",
     brand: "Prada",
     description:
-      "Bolso de mano con cintura Prada: estilo minimalista y elegante con materiales resistentes. Alta calidad garantizada. Precio: 40€ (¡Novedad - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso. ¡Funcional y chic!",
+      "Bolso de mano con cintura Prada: estilo minimalista y elegante con materiales resistentes. Alta calidad garantizada. Precio: 40€ (¡Novedad - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso. ¡Funcional y chic!",
     price: 40,
     originalPrice: 60,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bolso%20prada-lFGuiSUMHuW8F3VjXxht6E4xXdjk9F.jpeg",
@@ -648,7 +648,7 @@ export const accesoriosData: Product[] = [
     name: "Bolso Lacoste",
     brand: "Lacoste",
     description:
-      "Bolso de mano con cintura Lacoste: diseño deportivo y práctico con logo icónico. Alta calidad garantizada. Precio: 40€ (¡Oferta comfy - SAVE 33% de 60€!). Envío en 24-48 horas, pago contra reembolso. ¡Versátil para el día a día!",
+      "Bolso de mano con cintura Lacoste: diseño deportivo y práctico con logo icónico. Alta calidad garantizada. Precio: 40€ (¡Oferta comfy - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso. ¡Versátil para el día a día!",
     price: 40,
     originalPrice: 60,
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bolso%20lacoste-n9qUwjS6bT0MHGn8L38263ee6Snm3Y.jpeg",
@@ -667,7 +667,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Tech Blanco-Gris",
         brand: "Nike",
         description:
-          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Elige tu vibe!",
+          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Elige tu vibe!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20nike%20tech%20color%20blanco%20y%20gris-g5j9o6YpSVB1SzqpHrOocvzKtgKtNL.jpeg",
@@ -683,7 +683,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Tech Blanco-Verde",
         brand: "Nike",
         description:
-          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 6 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Elige tu vibe!",
+          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 6 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Elige tu vibe!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20nike%20tech%20color%20blanco%2C%20verde%20y%20negro-VI9qOF0Task0Zmz7ncLac5NWqqsfD6.jpeg",
@@ -699,7 +699,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Tech Negro",
         brand: "Nike",
         description:
-          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Elige tu vibe!",
+          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Elige tu vibe!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20nike%20tech%20color%20negro%2C%20blanco%20y%20gris-xAabefJ4KGujPOgfLUWw1X9jfitFTq.jpeg",
@@ -715,7 +715,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Tech Azul Claro-Gris",
         brand: "Nike",
         description:
-          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Elige tu vibe!",
+          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Elige tu vibe!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20nike%20tech%20color%20azul%20claro%20y%20gris-6zGEV7HcS5ETIegEhjQz25A2KYqsDI.jpeg",
@@ -731,7 +731,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Tech Azul",
         brand: "Nike",
         description:
-          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Elige tu vibe!",
+          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Elige tu vibe!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20nike%20tech%20color%20azul%2C%20blanco%20y%20azul%20claro-FMgDCrtJ6QGe7gjOwB0TgtTXdZJ7NL.jpeg",
@@ -747,7 +747,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Tech Negro-Blanco",
         brand: "Nike",
         description:
-          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Elige tu vibe!",
+          "Tech: diseño innovador con materiales premium para comodidad y estilo diario. Disponibles en 8 colores. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Multi-color top - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Elige tu vibe!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20nike%20tech%20color%20negro%20y%20blanco-1D8onFhfTe1xHOZFychNzu4eUR9ylT.jpeg",
@@ -765,7 +765,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Chándal Lacoste Azul Oscuro",
         brand: "Lacoste",
         description:
-          "Chándal Lacoste: conjunto cómodo y elegante con tela premium para looks casual o deportivos. Nuevo color azul oscuro disponible. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Oferta comfy - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Versátil y premium!",
+          "Chándal Lacoste: conjunto cómodo y elegante con tela premium para looks casual o deportivos. Nuevo color azul oscuro disponible. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Oferta comfy - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Versátil y premium!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20lacoste%20color%20azul%20oscuro-LIDmOFE3GPgjXL0ck8Ka7eOcad8Gdh.jpeg",
@@ -781,7 +781,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Chándal Lacoste Azul Claro",
         brand: "Lacoste",
         description:
-          "Chándal Lacoste: conjunto cómodo y elegante con tela premium para looks casual o deportivos. Color azul claro disponible. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Oferta comfy - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Versátil y premium!",
+          "Chándal Lacoste: conjunto cómodo y elegante con tela premium para looks casual o deportivos. Color azul claro disponible. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 60€ (¡Oferta comfy - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Versátil y premium!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20lacoste%20color%20azul%20%20claro-gNziDgpzCZgzau0EbPsPthEEFuZwqr.jpeg",
@@ -797,7 +797,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Chándal Lacoste Cocodrilo Azul",
         brand: "Lacoste",
         description:
-          "Chándal Lacoste de cocodrilo en azul: conjunto cómodo con logo icónico para looks casual o deportivos. Alta calidad garantizada. Tallas: S, M, L, XL (recomienda una talla más). Precio: 60€ (¡Oferta comfy - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Versátil y premium!",
+          "Chándal Lacoste de cocodrilo en azul: conjunto cómodo con logo icónico para looks casual o deportivos. Alta calidad garantizada. Tallas: S, M, L, XL (recomienda una talla más). Precio: 60€ (¡Oferta comfy - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Versátil y premium!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20lacoste%20de%20cocodrilo%20azul-CajxGJBWTlu47IsBqVkGckbKJZ6HyX.jpeg",
@@ -813,7 +813,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Chándal Lacoste Cocodrilo Blanco-Azul",
         brand: "Lacoste",
         description:
-          "Chándal Lacoste de cocodrilo en blanco y azul: conjunto elegante con logo icónico. Alta calidad garantizada. Tallas: S, M, L, XL (recomienda una talla más). Precio: 60€ (¡Novedad - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Estilo fresco!",
+          "Chándal Lacoste de cocodrilo en blanco y azul: conjunto elegante con logo icónico. Alta calidad garantizada. Tallas: S, M, L, XL (recomienda una talla más). Precio: 60€ (¡Novedad - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo fresco!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20lacoste%20de%20cocodrilo%20blanco%20y%20azul-CcyMkBQ7JF5MyGmAQQrYeFOeWe6ATc.jpeg",
@@ -829,7 +829,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Chándal Lacoste 2026 Azul",
         brand: "Lacoste",
         description:
-          "Chándal Lacoste Nuevo 2026 en azul: diseño actualizado con tela premium, disponible en mucha cantidad. Alta calidad garantizada, muy buenos en venta. Tallas: S, M, L, XL. Precio: 60€ (¡Top ventas - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Increíble calidad!",
+          "Chándal Lacoste Nuevo 2026 en azul: diseño actualizado con tela premium, disponible en mucha cantidad. Alta calidad garantizada, muy buenos en venta. Tallas: S, M, L, XL. Precio: 60€ (¡Top ventas - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Increíble calidad!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20lacoste%202026%20azul-nzjoNGpwvLaxqpU7RdRwNal91zbbtZ.jpeg",
@@ -845,7 +845,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Chándal Lacoste 2026 Marrón",
         brand: "Lacoste",
         description:
-          "Chándal Lacoste Nuevo 2026 en marrón: diseño actualizado con tela premium, disponible en mucha cantidad. Alta calidad garantizada, muy buenos en venta. Tallas: S, M, L, XL. Precio: 60€ (¡Novedad - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Increíble calidad!",
+          "Chándal Lacoste Nuevo 2026 en marrón: diseño actualizado con tela premium, disponible en mucha cantidad. Alta calidad garantizada, muy buenos en venta. Tallas: S, M, L, XL. Precio: 60€ (¡Novedad - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Increíble calidad!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20nuevo%20lacoste%20marr%C3%B3n-uh0B7cNsmpZyjMXreJKymjOm9VxqJB.jpeg",
@@ -861,7 +861,7 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Chándal Lacoste 2026 Negro",
         brand: "Lacoste",
         description:
-          "Chándal Lacoste Nuevo 2026 en negro: diseño actualizado con tela premium, disponible en mucha cantidad. Alta calidad garantizada, muy buenos en venta. Tallas: S, M, L, XL. Precio: 60€ (¡Clásico - SAVE 33% de 90€!). Envío en 24-48 horas, pago contra reembolso. ¡Increíble calidad!",
+          "Chándal Lacoste Nuevo 2026 en negro: diseño actualizado con tela premium, disponible en mucha cantidad. Alta calidad garantizada, muy buenos en venta. Tallas: S, M, L, XL. Precio: 60€ (¡Clásico - SAVE 33% de 90€!). Envío en 24-72 horas, pago contra reembolso. ¡Increíble calidad!",
         price: 60,
         originalPrice: 90,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20lacoste%20nuevo%20negro-zvnZPGrCaPOoCgsIrGsRbl0gFzknwY.jpeg",
@@ -879,8 +879,8 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Chándal Armani Negro",
         brand: "Armani",
         description:
-          "Chándal Armani en negro: conjunto cómodo y elegante con tela premium para looks casual o deportivos. Alta calidad garantizada, vienen pequeños—recomienda una talla más. Tallas: S, M, L, XL. Precio: 55€ (¡Oferta comfy - SAVE 31% de 80€!). Envío en 24-48 horas, pago contra reembolso. ¡Versátil y premium!",
-        price: 55,
+          "Chándal Armani en negro: conjunto cómodo y elegante con tela premium para looks casual o deportivos. Alta calidad garantizada, vienen pequeños—recomienda una talla más. Tallas: S, M, L, XL. Precio: 55€ (¡Oferta comfy - SAVE 31% de 80€!). Envío en 24-72 horas, pago contra reembolso. ¡Versátil y premium!",
+        price: 67,
         originalPrice: 80,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20armani%20azul-hufEaODlXWqg8t1Epm6ITnUICipGWT.jpeg",
         images: [
@@ -895,8 +895,8 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Chándal Armani Blanco",
         brand: "Armani",
         description:
-          "Chándal Armani en blanco: conjunto cómodo y elegante con tela premium para looks casual o deportivos. Alta calidad garantizada, vienen pequeños—recomienda una talla más. Tallas: S, M, L, XL. Precio: 55€ (¡Oferta fresca - SAVE 31% de 80€!). Envío en 24-48 horas, pago contra reembolso. ¡Versátil y premium!",
-        price: 55,
+          "Chándal Armani en blanco: conjunto cómodo y elegante con tela premium para looks casual o deportivos. Alta calidad garantizada, vienen pequeños—recomienda una talla más. Tallas: S, M, L, XL. Precio: 55€ (¡Oferta fresca - SAVE 31% de 80€!). Envío en 24-72 horas, pago contra reembolso. ¡Versátil y premium!",
+        price: 67,
         originalPrice: 80,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chandal%20armani%20blanco%20y%20azul-2Cpk80ka7hQKgIEWhaCQPTaETYQQJ2.jpeg",
         images: [
@@ -915,8 +915,8 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Conjunto Verano Lacoste Rosa",
         brand: "Lacoste",
         description:
-          "Conjunto verano Lacoste en rosa: conjunto ligero y fresco perfecto para verano con tela premium y logo discreto. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 50€ (¡Oferta verano - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo fresco y elegante!",
-        price: 50,
+          "Conjunto verano Lacoste en rosa: conjunto ligero y fresco perfecto para verano con tela premium y logo discreto. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 50€ (¡Oferta verano - SAVE 33% de 75€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo fresco y elegante!",
+        price: 62,
         originalPrice: 75,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20lacoste%20rosa-WFqoPjPkOQTiDqOng04ehtOnHPLVZX.jpeg",
         images: [
@@ -931,8 +931,8 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Conjunto Verano Lacoste Verde",
         brand: "Lacoste",
         description:
-          "Conjunto verano Lacoste en verde: conjunto ligero y fresco perfecto para verano con tela premium y logo discreto. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 50€ (¡Oferta verano - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo fresco y elegante!",
-        price: 50,
+          "Conjunto verano Lacoste en verde: conjunto ligero y fresco perfecto para verano con tela premium y logo discreto. Alta calidad garantizada. Tallas: S, M, L, XL. Precio: 50€ (¡Oferta verano - SAVE 33% de 75€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo fresco y elegante!",
+        price: 62,
         originalPrice: 75,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20lacoste%20verde-TuyhuftJI293jBUTlD9k4J3PJuRjCq.jpeg",
         images: [
@@ -949,8 +949,8 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Conjunto Verano Burberry Crema",
         brand: "Burberry",
         description:
-          "Conjunto Burberry en crema: conjunto elegante y cómodo con tela premium. Recomiendo una talla más. Alta calidad garantizada. Tallas: M, L, XL, XXL. Precio: 50€ (¡Oferta premium - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo de lujo accesible!",
-        price: 50,
+          "Conjunto Burberry en crema: conjunto elegante y cómodo con tela premium. Recomiendo una talla más. Alta calidad garantizada. Tallas: M, L, XL, XXL. Precio: 50€ (¡Oferta premium - SAVE 33% de 75€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo de lujo accesible!",
+        price: 62,
         originalPrice: 75,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20burberry%20crema-zS3Rtwlzhqi9mOqbaxt2YDXXpsyGZH.jpeg",
         images: [
@@ -965,8 +965,8 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Conjunto Verano Burberry Blanco",
         brand: "Burberry",
         description:
-          "Conjunto Burberry en blanco: conjunto elegante y cómodo con tela premium. Recomiendo una talla más. Alta calidad garantizada. Tallas: M, L, XL, XXL. Precio: 50€ (¡Oferta premium - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo de lujo accesible!",
-        price: 50,
+          "Conjunto Burberry en blanco: conjunto elegante y cómodo con tela premium. Recomiendo una talla más. Alta calidad garantizada. Tallas: M, L, XL, XXL. Precio: 50€ (¡Oferta premium - SAVE 33% de 75€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo de lujo accesible!",
+        price: 62,
         originalPrice: 75,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20burberry%20blanco-Er469vrhrooUy3uM7ICQBqtQTxLG0T.jpeg",
         images: [
@@ -981,8 +981,8 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
         name: "Conjunto Verano Burberry Negro",
         brand: "Burberry",
         description:
-          "Conjunto Burberry en negro: conjunto elegante y cómodo con tela premium. Recomiendo una talla más. Alta calidad garantizada. Tallas: M, L, XL, XXL. Precio: 50€ (¡Oferta premium - SAVE 33% de 75€!). Envío en 24-48 horas, pago contra reembolso en casa. ¡Estilo de lujo accesible!",
-        price: 50,
+          "Conjunto Burberry en negro: conjunto elegante y cómodo con tela premium. Recomiendo una talla más. Alta calidad garantizada. Tallas: M, L, XL, XXL. Precio: 50€ (¡Oferta premium - SAVE 33% de 75€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo de lujo accesible!",
+        price: 62,
         originalPrice: 75,
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/conjunto%20verano%20burberry%20negro-ot7IyFJK92rCBqlcW6v5z7HWZM4Z3c.jpeg",
         images: [

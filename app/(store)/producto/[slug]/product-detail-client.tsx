@@ -31,7 +31,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-const WHATSAPP_NUMBER = "34662568296"
+const WHATSAPP_NUMBER = "34643154824"
 
 interface Review {
   id: number
@@ -599,15 +599,15 @@ export function ProductDetailClient({
             <div className="grid grid-cols-3 gap-3 rounded-xl border border-border bg-card p-4">
               <div className="flex flex-col items-center gap-1.5 text-center">
                 <Truck className="h-5 w-5 text-primary" />
-                <span className="text-xs text-muted-foreground">Envío en 24-48 horas</span>
+                <span className="text-xs text-muted-foreground">Envío en 24-72 horas</span>
               </div>
               <div className="flex flex-col items-center gap-1.5 text-center">
                 <ShieldCheck className="h-5 w-5 text-primary" />
-                <span className="text-xs text-muted-foreground">Pago al recibir</span>
+                <span className="text-xs text-muted-foreground">100% Seguro</span>
               </div>
               <div className="flex flex-col items-center gap-1.5 text-center">
                 <RotateCcw className="h-5 w-5 text-primary" />
-                <span className="text-xs text-muted-foreground">Incluye caja original</span>
+                <span className="text-xs text-muted-foreground">Devolución fácil</span>
               </div>
             </div>
 

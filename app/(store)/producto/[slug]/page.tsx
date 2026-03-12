@@ -42,10 +42,10 @@ export async function generateMetadata({
   if (!found) return {}
   const { product } = found
   return {
-    title: `${product.name} - RopaModa`,
+    title: `${product.name} - VANTTI`,
     description: product.description.slice(0, 160),
     openGraph: {
-      title: `${product.name} - RopaModa`,
+      title: `${product.name} - VANTTI`,
       description: product.description.slice(0, 160),
       images: [product.image],
     },
