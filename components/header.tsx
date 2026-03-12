@@ -237,7 +237,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+      <div className="mx-auto flex max-w-7xl h-[70px] items-center justify-between px-4 lg:px-8">
         <Link href="/" className="flex items-center gap-2" aria-label="VANTTI - Inicio">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vantti%20logo-XSxbuVEpqqETiV2jtNWtcgsMJwGtIg.png"
@@ -245,7 +245,7 @@ export function Header() {
             width={48}
             height={48}
             className="h-9 md:h-12"
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: "auto", height: "auto", objectFit: "contain" }}
             priority
           />
           <span className="hidden font-serif text-2xl font-bold tracking-widest text-foreground md:inline">
