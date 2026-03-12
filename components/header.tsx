@@ -40,8 +40,7 @@ const navItems: NavItem[] = [
       { label: "Nike", href: "/ropa#chandal-nike" },
       { label: "Lacoste", href: "/ropa#chandal-lacoste" },
       { label: "Armani", href: "/ropa#chandal-armani" },
-      { label: "Conjunto Verano", href: "/ropa#conjunto-verano" },
-      { label: "Lacoste Verano", href: "/ropa#conjunto-verano-lacoste" },
+      { label: "Burberry Verano", href: "/ropa#conjunto-verano-burberry" },
     ],
   },
   {
@@ -191,8 +190,9 @@ function MobileNavItem({
     <div>
       <button
         onClick={() => setIsExpanded(!isExpanded)}
+        aria-expanded={isExpanded}
         className={cn(
-          "w-full flex items-center justify-between rounded-md px-3 py-2.5 text-sm font-medium transition-colors",
+          "w-full flex items-center justify-between rounded-md px-3 py-3 text-sm font-semibold tracking-wide transition-colors",
           isExpanded
             ? "bg-secondary text-foreground"
             : "text-foreground hover:bg-secondary hover:text-foreground"
@@ -201,28 +201,34 @@ function MobileNavItem({
         {item.label}
         <ChevronDown
           className={cn(
-            "h-4 w-4 transition-transform duration-200",
+            "h-4 w-4 shrink-0 transition-transform duration-300",
             isExpanded && "rotate-180"
           )}
           aria-hidden="true"
         />
       </button>
 
-      {isExpanded && (
-        <ul className="ml-3 mt-1 space-y-0.5 border-l border-border pl-3">
+      <div
+        className={cn(
+          "overflow-hidden transition-all duration-300 ease-in-out",
+          isExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        )}
+      >
+        <ul className="ml-4 mt-1 mb-1 space-y-0.5 border-l-2 border-border pl-3">
           {item.submenu.map((sub) => (
             <li key={sub.href}>
               <a
                 href={sub.href}
                 onClick={(e) => handleSubClick(e, sub.href)}
-                className="block rounded-md px-3 py-2 text-xs font-medium uppercase tracking-wider text-foreground/70 transition-colors hover:bg-secondary hover:text-foreground"
+                className="flex items-center gap-2 rounded-md px-3 py-2.5 text-sm text-foreground/70 transition-colors hover:bg-secondary hover:text-foreground active:bg-secondary"
               >
+                <span className="h-1 w-1 rounded-full bg-foreground/30 shrink-0" />
                 {sub.label}
               </a>
             </li>
           ))}
         </ul>
-      )}
+      </div>
     </div>
   )
 }
