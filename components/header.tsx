@@ -54,6 +54,7 @@ const navItems: NavItem[] = [
       { label: "Lacoste", href: "/accesorios#lacoste" },
     ],
   },
+  { label: "Relojes", href: "/relojes" },
 ]
 
 // ---- Desktop nav link with dropdown ----
@@ -247,7 +248,7 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         <Link href="/" className="flex items-center gap-2" aria-label="VANTTI - Inicio">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vantti%20logo-XSxbuVEpqqETiV2jtNWtcgsMJwGtIg.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nuevo%20logo%20vantti-mqgWni4opeyHBwZTbQB3dFqntvOs5o.jpeg"
             alt="VANTTI"
             width={48}
             height={48}

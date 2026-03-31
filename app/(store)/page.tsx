@@ -10,10 +10,10 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-foreground py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
           <h1 className="font-serif text-5xl font-bold leading-tight text-background md:text-6xl lg:text-7xl tracking-tight">
-            <span className="text-balance">VANTTI: EL NUEVO ESTÁNDAR DEL LUJO</span>
+            <span className="text-balance">Las zapatillas de los que saben</span>
           </h1>
           <p className="mt-6 font-sans text-lg font-light tracking-wide text-background/90 md:text-xl max-w-2xl mx-auto">
-            Zapatillas de diseño, calidad premium. Envío 24-72h. Pago contra reembolso.
+            Desde 42€. Envío gratis en 24-72h desde España. Pagas cuando lo recibes.
           </p>
           <div className="mt-10">
             <Button
@@ -22,7 +22,7 @@ export default function HomePage() {
               className="border-2 border-background bg-transparent text-background hover:bg-background hover:text-foreground"
             >
               <Link href="/zapatillas">
-                VER COLECCIÓN
+                VER ZAPATILLAS
               </Link>
             </Button>
           </div>
@@ -68,17 +68,69 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Comparison Section */}
+      <section className="mx-auto max-w-5xl px-4 py-16 lg:px-8">
+        <h2 className="text-center font-serif text-3xl font-bold text-foreground tracking-wide mb-2">
+          POR QUÉ ELEGIRNOS
+        </h2>
+        <p className="text-center text-muted-foreground mb-12">Sin mencionar a nadie. Solo la realidad.</p>
+
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr className="border-b-2 border-border">
+                <th className="px-4 py-4 text-left text-foreground font-semibold w-1/3">Otras tiendas</th>
+                <th className="px-4 py-4 text-center text-muted-foreground font-normal w-1/3"></th>
+                <th className="px-4 py-4 text-right text-foreground font-semibold w-1/3">VANTTI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-border hover:bg-secondary/50 transition-colors">
+                <td className="px-4 py-4 text-foreground/70">Semanas de espera</td>
+                <td className="px-4 py-4 text-center text-muted-foreground text-sm">Envío</td>
+                <td className="px-4 py-4 text-right text-foreground font-semibold">24-72h desde España 🇪🇸</td>
+              </tr>
+              <tr className="border-b border-border hover:bg-secondary/50 transition-colors">
+                <td className="px-4 py-4 text-foreground/70">Por adelantado, sin garantías</td>
+                <td className="px-4 py-4 text-center text-muted-foreground text-sm">Pago</td>
+                <td className="px-4 py-4 text-right text-foreground font-semibold">Pagas cuando lo recibes 📦</td>
+              </tr>
+              <tr className="border-b border-border hover:bg-secondary/50 transition-colors">
+                <td className="px-4 py-4 text-foreground/70">No sabes lo que llega</td>
+                <td className="px-4 py-4 text-center text-muted-foreground text-sm">Calidad</td>
+                <td className="px-4 py-4 text-right text-foreground font-semibold">Calidad verificada antes de enviar ✓</td>
+              </tr>
+              <tr className="border-b border-border hover:bg-secondary/50 transition-colors">
+                <td className="px-4 py-4 text-foreground/70">Soporte difícil de contactar</td>
+                <td className="px-4 py-4 text-center text-muted-foreground text-sm">Atención</td>
+                <td className="px-4 py-4 text-right text-foreground font-semibold">WhatsApp en español, respuesta inmediata</td>
+              </tr>
+              <tr className="hover:bg-secondary/50 transition-colors">
+                <td className="px-4 py-4 text-foreground/70">Complicadas o imposibles</td>
+                <td className="px-4 py-4 text-center text-muted-foreground text-sm">Devoluciones</td>
+                <td className="px-4 py-4 text-right text-foreground font-semibold">14 días sin coste</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-center font-semibold text-foreground mt-8 text-lg">
+          Misma estética. Sin el riesgo. Sin la espera.
+        </p>
+      </section>
+
       {/* Categories Grid */}
       <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
         <h2 className="text-center font-serif text-3xl font-bold text-foreground tracking-wide">
           NUESTRAS CATEGORÍAS
         </h2>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-4">
           {[
             { name: "Zapatillas", href: "/zapatillas" },
             { name: "Ropa", href: "/ropa" },
             { name: "Accesorios", href: "/accesorios" },
+            { name: "Relojes", href: "/relojes" },
           ].map((cat) => (
             <Link
               key={cat.href}
@@ -92,23 +144,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Nuestra Visión Section */}
+      {/* Por Qué VANTTI Section */}
       <section className="bg-foreground px-4 py-20 text-background lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-4xl font-bold tracking-wide">
-            NUESTRA VISIÓN
+            POR QUÉ VANTTI
           </h2>
-          <h3 className="mt-4 font-sans text-lg font-light tracking-wide">
-            VANTTI: Redefiniendo el Estándar.
-          </h3>
+
           <p className="mt-8 font-sans text-base leading-relaxed text-balance">
-            Nacimos en Madrid con una misión clara: romper las reglas del mercado tradicional. No aceptamos que el estilo y la calidad premium sean un privilegio de pocos.
+            Somos una marca española que nació para darte el estilo que buscas sin los riesgos de comprar al otro lado del mundo. Almacén en España, entrega real en 24-72h.
           </p>
           <p className="mt-4 font-sans text-base leading-relaxed text-balance">
-            En VANTTI, eliminamos los intermediarios y los márgenes absurdos de las grandes firmas para entregarte excelencia directamente desde nuestro almacén en España. No vendemos solo calzado; entregamos la seguridad de vestir el mejor diseño, con la confianza del pago en mano y envío en 24h.
+            No pedimos dinero por adelantado. Cuando el repartidor llama a tu puerta, tú decides si pagas. Así de simple.
           </p>
-          <p className="mt-4 font-sans text-base leading-relaxed text-balance font-medium">
-            Esto no es moda rápida. Es lujo inteligente.
+          <p className="mt-4 font-sans text-base leading-relaxed text-balance font-semibold">
+            Las zapatillas de los que saben.
           </p>
         </div>
       </section>
