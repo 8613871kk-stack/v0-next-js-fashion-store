@@ -63,7 +63,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Dior B22",
       brand: "Dior",
       description:
-        "Zapatillas B22: diseño chunky y elegante con materiales premium transpirables para máxima comodidad diaria. Disponibles en negro y gris o blanco. Alta calidad garantizada, incluye caja original Dior. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Disponible de nuevo - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo de lujo al alcance!",
+        "Dior B22. Diseño chunky con materiales transpirables. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dior%20b22%20color%20negro-J4F5HyKAYxIgYOW7LEXhL0GfoDKgA8.jpg",
@@ -81,7 +81,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Dior B30",
       brand: "Dior",
       description:
-        "Zapatillas Dior B30: silueta moderna y versátil, perfectas para looks urbanos con malla resistente y suela acolchada. Nuevo color negro y blanco disponible. Alta calidad garantizada, incluye caja original Dior como en la foto. Tallas: 40, 41, 42, 43, 44, 45. Precio: 65€ (¡Color top ventas - Oferta SAVE 35% de 100€!). Envío en 24-72 horas, pago seguro en casa.",
+        "Dior B30. Silueta moderna y versátil con malla resistente. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 57,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dior%20b30%20color%20blanco-SEFPcA2TFFrMTN4mfhRkpHWYHWmBzC.jpeg",
@@ -100,7 +100,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "New Balance 9060 Negro",
       brand: "New Balance",
       description:
-        "New Balance 9060 en negro: equilibrio perfecto entre retro y moderno, con amortiguación superior para todo el día. Alta calidad garantizada, incluye caja original New Balance y accesorios. Tallas disponibles: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Bestseller - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡No te quedes sin ellas!",
+        "New Balance 9060 negro. Retro con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/new%20balance%209060%20color%20negro-zCPARnnaRzXtQaHoDQJxEewHmbOSWQ.png",
@@ -117,7 +117,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "New Balance 9060 Blanco",
       brand: "New Balance",
       description:
-        "New Balance 9060 en blanco: diseño fresco y versátil con amortiguación avanzada para confort todo el día. Alta calidad garantizada, incluye caja original New Balance y accesorios. Tallas disponibles: 36, 37, 38, 39, 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Novedad - SAVE 30% de 100€!). Envío en 24-72 horas, pago en casa. ¡Estilo impecable!",
+        "New Balance 9060 blanco. Diseño fresco y versátil. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/new%20balance%209060%20blancas-Bh8Dgr1fVr7MSmhaw8Z4L4fqrHI6rB.jpeg",
@@ -134,7 +134,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "New Balance 9060 Rosa",
       brand: "New Balance",
       description:
-        "New Balance 9060: equilibrio perfecto entre retro y moderno, con amortiguación superior para todo el día. Nuevo color rosa disponible. Alta calidad garantizada, incluye caja original New Balance y accesorios. Tallas: 36, 37, 38, 39, 40. Precio: 70€ (¡Novedad femenina - SAVE 30% de 100€!). Envío en 24-72 horas, pago en casa. ¡Estilo vibrante!",
+        "New Balance 9060 rosa. Retro con estilo vibrante. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/new%20balance%209060%20color%20rosa-wfkGfBWuoYmEhHmdpJ2s25xz8c38Jq.jpeg",
@@ -150,7 +150,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "New Balance 2000 Rosa",
       brand: "New Balance",
       description:
-        "New Balance 2000: diseño clásico con amortiguación superior para rendimiento diario. Alta calidad garantizada. Tallas: 36, 37, 38, 39, 40. Precio: 40€ (¡Oferta económica - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Calidad accesible!",
+        "New Balance 2000 rosa. Clásico con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 42,
       originalPrice: 60,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20balance%202000-VfJnkbdEVwZobnaebVE8erYOFRU6yf.jpeg",
@@ -168,7 +168,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike React",
       brand: "Nike",
       description:
-        "Nike React: tecnología de espuma reactiva para rebote y comodidad extrema en cada paso. Disponibles en 4 colores vibrantes: gris puro, negro elegante, gris-marrón urbano y gris-negro mix. Alta calidad garantizada, incluye caja original Nike. Tallas: 40, 41, 42, 43, 44, 45. Precio: 65€ (¡Oferta flash - SAVE 35% de 100€!). Envío en 24-72 horas, pago en casa sin riesgos.",
+        "Nike React. Espuma reactiva para comodidad extrema. Disponibles en 4 colores. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 57,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20react%20gris-SnGGN2vWSRCqzcpf2QoRVTugl7dOuj.jpeg",
@@ -182,28 +182,12 @@ export const zapatillasData: Record<string, Product[]> = {
       colors: ["Gris", "Negro", "Gris-Marrón", "Gris-Negro"],
     },
     {
-      id: "nike-shox-negro",
-      slug: "nike-shox-negro",
-      name: "Nike Shox Negro",
-      brand: "Nike",
-      description:
-        "Nike Shox en negro: sistema de amortiguación Shox para energía explosiva y comodidad innovadora. Perfectas para atletas o looks diarios. Alta calidad garantizada, incluye caja original Nike. Tallas: 36, 37, 38, 39, 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Oferta limitada - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso.",
-      price: 72,
-      originalPrice: 100,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20shox%20negra-yfcWSuuHSmzOSWKjfUJuhnuopQ2ZbD.jpeg",
-      images: [
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20shox%20negra-yfcWSuuHSmzOSWKjfUJuhnuopQ2ZbD.jpeg",
-      ],
-      sizes: ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45"],
-      colors: ["Negro"],
-    },
-    {
       id: "nike-airmax95-cortez-negro",
       slug: "nike-airmax95-cortez-negro",
       name: "Air Max 95 x Cortez Negro",
       brand: "Nike",
       description:
-        "Zapatillas Air Max 95 x Cortez en negro: fusión icónica con amortiguación Air y detalles amarillos para comodidad diaria. Alta calidad garantizada. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Colaboración exclusiva - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Eleva tu paso!",
+        "Air Max 95 x Cortez negro. Icónica con amortiguación Air. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Air%20max%2095%20x%20cortez%20color%20negro%202-upKF6t1BhqZMiIeHK8zKU0981xXxVE.jpeg",
@@ -215,28 +199,12 @@ export const zapatillasData: Record<string, Product[]> = {
       colors: ["Negro"],
     },
     {
-      id: "nike-shox-camaleon",
-      slug: "nike-shox-camaleon",
-      name: "Nike Shox Camaleón",
-      brand: "Nike",
-      description:
-        "Shox Camaleón: sistema de amortiguación Shox para energía explosiva y comodidad innovadora. Disponibles en 3 colores: azul, rojo y verde. Alta calidad garantizada, incluye caja original y todo. Precio: 70€ (¡Oferta versátil - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Elige tu color!",
-      price: 72,
-      originalPrice: 100,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20shox%20camaleon-yt0aBPlRiEplt3E02lCtXMVsgu7MNF.jpeg",
-      images: [
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20shox%20camaleon-yt0aBPlRiEplt3E02lCtXMVsgu7MNF.jpeg",
-      ],
-      sizes: ["40", "41", "42", "43", "44", "45"],
-      colors: ["Azul", "Rojo", "Verde"],
-    },
-    {
       id: "nike-af1-nocta",
       slug: "nike-af1-nocta",
       name: "Air Force 1 x Nocta Blanco",
       brand: "Nike",
       description:
-        "Air Force 1 x Nocta: fusión clásica con detalles premium, doble cordones y suela resistente. Alta calidad garantizada, increíble acabado. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Colaboración exclusiva - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Eleva tu estilo!",
+        "Air Force 1 x Nocta blanco. Clásica con doble cordones. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/air%20force%20x%20nocta%20color%20blanco-zdMc0rQRb7SF6Vj4qsKpRBUjkCe6eP.jpeg",
@@ -252,7 +220,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Air Force 1 Blanco",
       brand: "Nike",
       description:
-        "Zapatillas Air Force en blanco: diseño clásico con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja original. Tallas: 40, 41, 42, 43, 44, 45. Precio: 40€ (¡Oferta económica - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo icónico accesible!",
+        "Air Force 1 blanco. Clásico con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 42,
       originalPrice: 60,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20air%20force%201%20color%20blanco-T0vNBRyp0bcaUXrZ5DGQ0xyjNA6D7t.jpeg",
@@ -268,7 +236,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Air Force 1 Negro",
       brand: "Nike",
       description:
-        "Zapatillas Air Force en negro: diseño clásico con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja original. Tallas: 40, 41, 42, 43, 44, 45. Precio: 40€ (¡Clásico - SAVE 33% de 60€!). Envío en 24-72 horas, pago contra reembolso en casa. ¡Estilo icónico accesible!",
+        "Air Force en negro. Diseño clásico con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 42,
       originalPrice: 60,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20air%20force%201%20color%20negro-nMc5aPClmy3VQiuMmT5taXdQ2RTrvo.jpeg",
@@ -278,23 +246,119 @@ export const zapatillasData: Record<string, Product[]> = {
       sizes: ["40", "41", "42", "43", "44", "45"],
       colors: ["Negro"],
     },
+    {
+      id: "nike-shox-negras",
+      slug: "nike-shox-negras",
+      name: "Nike Shox Negras",
+      brand: "Nike",
+      description:
+        "Nike Shox en negro. Amortiguación con columnas y estilo que se nota. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 72,
+      originalPrice: 120,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20tn%20negras-l0bTtfxj4vb2g5HJ6zSdPyHOw1U2jQ.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20tn%20negras-l0bTtfxj4vb2g5HJ6zSdPyHOw1U2jQ.jpg",
+      ],
+      sizes: ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45"],
+      colors: ["Negro"],
+    },
+    {
+      id: "nike-shox-blancas",
+      slug: "nike-shox-blancas",
+      name: "Nike Shox Blancas",
+      brand: "Nike",
+      description:
+        "Nike Shox en blanco. Estilo limpio con amortiguación de columnas. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 72,
+      originalPrice: 120,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20shox%20blancas-9OVGSmcqRdvCvRs5NeKc78x0gknzlR.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20shox%20blancas-9OVGSmcqRdvCvRs5NeKc78x0gknzlR.jpg",
+      ],
+      sizes: ["36", "38", "39", "40", "43", "44", "45"],
+      colors: ["Blanco"],
+    },
+    {
+      id: "nike-tn-negras",
+      slug: "nike-tn-negras",
+      name: "Nike TN Negras",
+      brand: "Nike",
+      description:
+        "Nike TN en negro. El clásico del barrio con amortiguación Air visible. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 72,
+      originalPrice: 120,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20tn%20negras-l0bTtfxj4vb2g5HJ6zSdPyHOw1U2jQ.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20tn%20negras-l0bTtfxj4vb2g5HJ6zSdPyHOw1U2jQ.jpg",
+      ],
+      sizes: ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45"],
+      colors: ["Negro"],
+    },
+    {
+      id: "nike-tn-blancas",
+      slug: "nike-tn-blancas",
+      name: "Nike TN Blancas",
+      brand: "Nike",
+      description:
+        "Nike TN en blanco. Icónicas y limpias. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 72,
+      originalPrice: 120,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20tn%20blancas-qVjrRPiaguz8Mqbtvhyf6Sor4EZ2cC.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20tn%20blancas-qVjrRPiaguz8Mqbtvhyf6Sor4EZ2cC.jpg",
+      ],
+      sizes: ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45"],
+      colors: ["Blanco"],
+    },
   ],
   Asics: [
     {
-      id: "asics-gel-negro",
-      slug: "asics-gel-negro",
-      name: "Asics Gel Negro",
+      id: "asics-gel-negras",
+      slug: "asics-gel-negras",
+      name: "Asics Gel Negras",
       brand: "Asics",
       description:
-        "Asics Gel en negro: amortiguación Gel icónica para absorción de impactos y rendimiento superior. Diseño sleek para running o casual. Alta calidad garantizada, incluye caja original Asics. Tallas: 40, 41, 42, 43, 44, 45. Precio: 65€ (¡Últimas unidades - SAVE 35% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Calidad que dura!",
-      price: 57,
+        "Asics Gel en negro. Amortiguación superior y diseño limpio para el día a día. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 60,
       originalPrice: 100,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/asic%20gel%20negro-SqV5WVNGiZfS1OpzhsGrlPOqA1HqFE.jpeg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/asics%20gel%20negras-GdG56ApXzV5hvhuPr7BOQKfWNE3wLT.jpg",
       images: [
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/asic%20gel%20negro-SqV5WVNGiZfS1OpzhsGrlPOqA1HqFE.jpeg",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/asics%20gel%20negras-GdG56ApXzV5hvhuPr7BOQKfWNE3wLT.jpg",
+      ],
+      sizes: ["39", "40", "41", "42"],
+      colors: ["Negro"],
+    },
+    {
+      id: "asics-gel-rosas",
+      slug: "asics-gel-rosas",
+      name: "Asics Gel Rosas",
+      brand: "Asics",
+      description:
+        "Asics Gel en rosa. Comodidad y estilo en cada paso. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 60,
+      originalPrice: 100,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Asics%20gel%20rosas-bQZLXAo68lDqoBtzTXr5s7QczwUnee.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Asics%20gel%20rosas-bQZLXAo68lDqoBtzTXr5s7QczwUnee.jpg",
+      ],
+      sizes: ["36", "38", "39", "40"],
+      colors: ["Rosa"],
+    },
+    {
+      id: "asics-gel-grises",
+      slug: "asics-gel-grises",
+      name: "Asics Gel Grises",
+      brand: "Asics",
+      description:
+        "Asics Gel en gris. Versátiles y cómodas para cualquier look. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 60,
+      originalPrice: 100,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/asics%20gel%20negras-GdG56ApXzV5hvhuPr7BOQKfWNE3wLT.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/asics%20gel%20negras-GdG56ApXzV5hvhuPr7BOQKfWNE3wLT.jpg",
       ],
       sizes: ["40", "41", "42", "43", "44", "45"],
-      colors: ["Negro"],
+      colors: ["Gris"],
     },
   ],
   Amiri: [
@@ -304,7 +368,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Zapatillas Amiri",
       brand: "Amiri",
       description:
-        "Zapatillas Amiri: estilo streetwear de lujo con detalles premium y suela resistente. Alta calidad garantizada, incluye caja original Amiri. Tallas disponibles: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Exclusivo - SAVE 30% de 100€!). Envío en 24-72 horas, pago seguro en casa. ¡Eleva tu outfit!",
+        "Zapatillas Amiri. Estilo streetwear con detalles y suela resistente. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amiri-KkZLd5lJWqZ8u3mEmrebMeGeKhZupu.jpeg",
@@ -316,6 +380,88 @@ export const zapatillasData: Record<string, Product[]> = {
       ],
       sizes: ["40", "41", "42", "43", "44", "45"],
       colors: ["Negro/Blanco"],
+    },
+    {
+      id: "amiri-blancas",
+      slug: "amiri-blancas",
+      name: "Amiri Blancas",
+      brand: "Amiri",
+      description:
+        "Amiri blancas. Diseño californiano con actitud. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 72,
+      originalPrice: 120,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Amiri%20blancas-WFOczCWO3EyHdGV6LB3FLopOmbDdIV.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Amiri%20blancas-WFOczCWO3EyHdGV6LB3FLopOmbDdIV.jpg",
+      ],
+      sizes: ["40", "41", "42", "43", "44", "45"],
+      colors: ["Blanco"],
+    },
+  ],
+  "Alexander McQueen": [
+    {
+      id: "amcqueen-blancas-lisas",
+      slug: "amcqueen-blancas-lisas",
+      name: "Alexander McQueen Blancas Lisas",
+      brand: "Alexander McQueen",
+      description:
+        "Alexander McQueen blancas lisas. El clásico que nunca falla. Suela oversized y diseño minimalista. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 72,
+      originalPrice: 120,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alexander%20mc%20queen%20negras%20lisas-1OEJliHvqmAn4IzN2O1TryjIQbz9Ej.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alexander%20mc%20queen%20negras%20lisas-1OEJliHvqmAn4IzN2O1TryjIQbz9Ej.jpg",
+      ],
+      sizes: ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45"],
+      colors: ["Blanco"],
+    },
+    {
+      id: "amcqueen-blancas",
+      slug: "amcqueen-blancas",
+      name: "Alexander McQueen Blancas",
+      brand: "Alexander McQueen",
+      description:
+        "Alexander McQueen blancas. Suela oversized icónica con detalles. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 72,
+      originalPrice: 120,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alexander%20mc%20queen%20blancas-w4VZnDxEnk9PJSSLWBntMkt6IxfQT3.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alexander%20mc%20queen%20blancas-w4VZnDxEnk9PJSSLWBntMkt6IxfQT3.jpg",
+      ],
+      sizes: ["41", "42", "43", "44", "45"],
+      colors: ["Blanco"],
+    },
+    {
+      id: "amcqueen-negras",
+      slug: "amcqueen-negras",
+      name: "Alexander McQueen Negras",
+      brand: "Alexander McQueen",
+      description:
+        "Alexander McQueen negras. Estilo limpio y actitud. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 72,
+      originalPrice: 120,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alexander%20mc%20queen%20negras-AZtKzeaYg1bgOpn9B6zrpIOXNLO0pD.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alexander%20mc%20queen%20negras-AZtKzeaYg1bgOpn9B6zrpIOXNLO0pD.jpg",
+      ],
+      sizes: ["41", "42", "43", "44", "45"],
+      colors: ["Negro"],
+    },
+    {
+      id: "amcqueen-negras-lisas",
+      slug: "amcqueen-negras-lisas",
+      name: "Alexander McQueen Negras Lisas",
+      brand: "Alexander McQueen",
+      description:
+        "Alexander McQueen negras lisas. Minimalismo total. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
+      price: 72,
+      originalPrice: 120,
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alexander%20mc%20queen%20negras%20lisas-1OEJliHvqmAn4IzN2O1TryjIQbz9Ej.jpg",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alexander%20mc%20queen%20negras%20lisas-1OEJliHvqmAn4IzN2O1TryjIQbz9Ej.jpg",
+      ],
+      sizes: ["42", "44", "45"],
+      colors: ["Negro"],
     },
   ],
   Nocta: [
@@ -341,7 +487,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Negro y Rojo",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en negro y rojo: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Versátil - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+        "Nike Nocta Glide negro y rojo. Diseño urbano con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nike%20nocta%20glide%20color%20negro%20y%20rojo-ZCg4SUNq1eG1MSF4TtFvRmcMiSJUp6.jpeg",
@@ -357,7 +503,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Blanca",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en blanca: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Fresco - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+        "Nike Nocta Glide blanca. Diseño urbano con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20blanco-u42TsleumFjwRsnTLO8jAmYGeR1HGV.jpeg",
@@ -373,7 +519,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Negro y Blanco",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en negro y blanco: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Contraste - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+        "Nike Nocta Glide negro y blanco. Diseño urbano con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20negro%20y%20blanco-Ae7SqDHxe567NruJt6SKBZsPHFEZGe.jpeg",
@@ -389,7 +535,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Negro y Dorado",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en negro y dorado: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Lujoso - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+        "Nike Nocta Glide negro y dorado. Diseño urbano con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20negro%20y%20dorado-0T5iN9x9t4nKKy3eGiQRupv6PyIlnh.jpeg",
@@ -405,7 +551,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Roja",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en roja: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Vibrante - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+        "Nike Nocta Glide roja. Diseño urbano con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20rojo-UlF6UiZLIKphMWveGVHfgtiT8OCdh5.jpeg",
@@ -421,7 +567,7 @@ export const zapatillasData: Record<string, Product[]> = {
       name: "Nike Nocta Glide Blanco y Negro",
       brand: "Nocta",
       description:
-        "Nike Nocta Glide en blanco y negro: diseño urbano con amortiguación superior y detalles premium. Alta calidad garantizada, incluye caja Nike roja. Tallas: 40, 41, 42, 43, 44, 45. Precio: 70€ (¡Dual - SAVE 30% de 100€!). Envío en 24-72 horas, pago contra reembolso. ¡Estilo innovador!",
+        "Nike Nocta Glide blanco y negro. Diseño urbano con amortiguación superior. Calidad verificada. Envío gratis en 24-72h. Pagas cuando las recibes.",
       price: 72,
       originalPrice: 100,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nike%20nocta%20glide%20color%20blanco%20y%20negro-Cm1ZmeR4PPlo7w5u4o0fmSzunqIdjb.jpeg",
@@ -997,6 +1143,14 @@ export const ropaData: Record<string, Record<string, Product[]>> = {
 
 export const relojesData: Product[] = [
   {
+    id: "hublot-classic-fusion",
+    name: "Hublot Classic Fusion Style",
+    description: "Reloj inspirado en el Hublot Classic Fusion. Caja de acero, esfera limpia y elegante. Calidad verificada.",
+    price: 50,
+    originalPrice: 90,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hublot-pBrbPIOr97QyXtcTyspgZTeeROl1VU.jpg",
+  },
+  {
     id: "reloj-submariner",
     name: "Reloj Submariner Style",
     description: "Reloj inspirado en el Submariner. Acero inoxidable con bisel giratorio.",
@@ -1094,5 +1248,16 @@ export const perfumesData: Product[] = [
     price: 26,
     originalPrice: 48,
     image: "/images/perfume-luxury.jpg",
+  },
+]
+
+export const mochilaData: Product[] = [
+  {
+    id: "mochila-fendi",
+    name: "Mochila Fendi Style",
+    description: "Mochila inspirada en Fendi. Diseño urbano con acabados de calidad. Perfecta para el día a día.",
+    price: 35,
+    originalPrice: 70,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dispomible%20fendi-GH7S5dsHjCEgHW6Fk5uEQyoOxeuD4r.jpg",
   },
 ]
