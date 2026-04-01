@@ -70,10 +70,9 @@ export default function HomePage() {
 
       {/* Comparison Section */}
       <section className="mx-auto max-w-5xl px-4 py-16 lg:px-8">
-        <h2 className="text-center font-serif text-3xl font-bold text-foreground tracking-wide mb-2">
+        <h2 className="text-center font-serif text-3xl font-bold text-foreground tracking-wide mb-12">
           POR QUÉ ELEGIRNOS
         </h2>
-        <p className="text-center text-muted-foreground mb-12">Sin mencionar a nadie. Solo la realidad.</p>
 
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
