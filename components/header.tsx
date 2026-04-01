@@ -42,7 +42,6 @@ const navItems: NavItem[] = [
       { label: "Lacoste", href: "/ropa#chandal-lacoste" },
       { label: "Armani", href: "/ropa#chandal-armani" },
       { label: "Burberry Verano", href: "/ropa#conjunto-verano-burberry" },
-      { label: "Gorras", href: "/ropa#gorras" },
     ],
   },
   {
