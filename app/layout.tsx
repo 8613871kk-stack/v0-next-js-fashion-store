@@ -10,13 +10,15 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "VANTTI - Zapatillas de Diseño y Lujo Premium",
+  title: "VANTTI - Zapatillas desde 42€ | Envío Gratis 24-72h | Pagas al Recibir",
   description:
-    "VANTTI: El nuevo estándar del lujo en zapatillas de diseño premium. Envío 24-72 horas. Pago contra reembolso. Compra directa desde España.",
+    "Zapatillas, ropa y accesorios de calidad desde 42€. Envío gratis desde España en 24-72h. Pagas cuando lo recibes. Sin riesgos, sin esperas.",
   keywords: [
     "zapatillas",
-    "zapatillas premium",
-    "lujo",
+    "agente chino alternativa",
+    "comprar zapatillas españa",
+    "contra reembolso",
+    "envio rapido zapatillas",
     "moda",
     "ropa",
     "accesorios",
@@ -25,9 +27,9 @@ export const metadata: Metadata = {
     "envío rápido",
   ],
   openGraph: {
-    title: "VANTTI - Zapatillas de Diseño y Lujo Premium",
+    title: "VANTTI - Zapatillas desde 42€ | Envío Gratis 24-72h | Pagas al Recibir",
     description:
-      "Zapatillas de diseño premium. Envío 24-72 horas. Pago contra reembolso.",
+      "Zapatillas, ropa y accesorios de calidad desde 42€. Envío gratis desde España en 24-72h. Pagas cuando lo recibes.",
     type: "website",
   },
 }
