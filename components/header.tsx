@@ -31,6 +31,7 @@ const navItems: NavItem[] = [
       { label: "Amiri", href: "/zapatillas#amiri" },
       { label: "Nocta", href: "/zapatillas#nocta" },
       { label: "Louis Vuitton", href: "/zapatillas#louis-vuitton" },
+      { label: "Balenciaga", href: "/zapatillas#balenciaga" },
     ],
   },
   {
@@ -52,6 +53,7 @@ const navItems: NavItem[] = [
       { label: "Gucci", href: "/accesorios#gucci" },
       { label: "Prada", href: "/accesorios#prada" },
       { label: "Lacoste", href: "/accesorios#lacoste" },
+      { label: "Fendi", href: "/accesorios#fendi" },
     ],
   },
   { label: "Relojes", href: "/relojes" },
